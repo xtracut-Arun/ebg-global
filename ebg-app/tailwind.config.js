@@ -18,12 +18,18 @@ export default {
       colors: {
         'primary': '#191919', 
         'secondary': '#FFFFFF',
+        'underline' : '#191919',
       },
     },
   },
   plugins: [
     function ({ addComponents, theme }) {
       addComponents({
+        '.text-dark':{
+          color:'#191919',
+        },
+        '.grey-gradient' :{
+          background:'linear-gradient(140deg, rgba(88,88,88,1) 14%, rgba(26,26,26,1) 100%)'}, 
         '.black-btn': {
           backgroundColor: theme('colors.primary'),
           color: theme('colors.white'),
@@ -31,6 +37,7 @@ export default {
           borderRadius: theme('borderRadius.md'),
           fontWeight: theme('fontWeight.medium'),
           transition: 'background-color 0.3s ease',
+          
           '&:hover': {
             backgroundColor: theme('colors.zinc.950'),
           },
@@ -62,6 +69,16 @@ export default {
             color: theme('colors.zinc.900'),
           },
         },
+        '.underline-btn':{
+          position: 'relative',
+          '&::before': {
+            width: '100%',
+            height: '3px',
+            borderBottom: '2px solid',
+            position: 'absolute',
+            bottom: '-7px',
+          },
+        }
       });
     },
   ],
