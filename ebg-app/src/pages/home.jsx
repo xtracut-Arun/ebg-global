@@ -245,6 +245,7 @@ export default function Home() {
       </div>
     </section>
 
+
     <section>
       <div className='container mx-auto rounded-lg grey-gradient'>
         <div className="flex flex-col md:flex-row  items-center justify-between text-white py-10">
