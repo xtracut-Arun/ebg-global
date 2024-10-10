@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'; 
 import { Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
+import leftImage from '../images/about/left.png';
+import rightImage from '../images/about/right.png';
 
 
 
@@ -28,11 +30,16 @@ const ProductSlider = ({ carditems }) => {
   // };
 
   return (
+    <>
+    <div className='relative md:px-[60px]'>
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
       // onSlideChange={handleSlideChange}
-      navigation={true}
+      navigation={{
+        nextEl: '.custom-next',
+        prevEl: '.custom-prev',
+      }}
       modules={[Navigation]}
       breakpoints={{
         640: {
@@ -50,9 +57,8 @@ const ProductSlider = ({ carditems }) => {
       }}
     >
       {carditems.map((item, index) => (
-        <SwiperSlide key={index}>
-          <div
-            className={`${
+        <SwiperSlide key={index} className=' rounded-[20px]'>
+          <div className={`${
               index === nextIndex ? 'bg-light-grey' : ''
             } flex flex-col pt-5`}
           >
@@ -62,7 +68,7 @@ const ProductSlider = ({ carditems }) => {
               className="h-[220px] object-cover rounded-t-lg w-full"
             />
             <div className="p-4 text-start rounded-b-lg text-dark">
-              <h3 className="text-center">{item.title}</h3>
+              <h3 className="text-center text-3xl">{item.title}</h3>
               <div className="space-x-6 my-5 mt-10 text-center">
                 <a href={item.buttonlink} className="black-btn text-sm">
                   Shop
@@ -70,9 +76,39 @@ const ProductSlider = ({ carditems }) => {
               </div>
             </div>
           </div>
+          
         </SwiperSlide>
+        
       ))}
     </Swiper>
+    <div className="custom-prev"></div>
+          <div className="custom-next"></div>
+          </div>
+    <style jsx>{`
+      .custom-prev, .custom-next {
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        cursor: pointer;
+      }
+
+      .custom-prev {
+        left: 10px;
+        background-image: url(${leftImage});
+      }
+      .swiper-button-disabled{opacity:.5;}
+      .custom-next {
+        right: 10px;
+        background-image: url(${rightImage});
+      }
+        @media only screen and (max-width: 600px) {.custom-prev, .custom-next { top: 88%;}}
+    `}</style>
+    </>
   );
 };
 

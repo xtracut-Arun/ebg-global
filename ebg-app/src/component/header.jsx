@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import mainLogo from'../images/logo-ebg.png';
+import '../index.css';
 
 const Header = () => {
   // State for mobile menu toggle
@@ -20,7 +21,8 @@ const Header = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Contact', path: '/contact' },
+    { name: 'Dealership', path: '/dealership' }
   ];
 
   // Dropdown items under "Services"

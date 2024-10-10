@@ -90,5 +90,15 @@ export default {
         }
       });
     },
+    function ({ addBase, theme }) {
+      addBase({
+        'p': { 
+          color: theme('colors.grey') 
+        },
+      });
+    },
   ],
+ 
+   
+  
 }

@@ -1,92 +1,164 @@
 import React from 'react';
+import Popup from 'reactjs-popup';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 import HeroSection from '../component/hero-section';
-import Peopleslide from '../component/peopleslide';
-import HeroIMage from '../images/about/about-hero.webp'
+import Productslider from '../component/ProductSlider';
+import Cta from '../component/cta';
+import { LuArrowRight } from "react-icons/lu";
 
 
 
-const ownershipcard =[
-    {sno: '1.' , title: 'Product Innovation', text: "At the core of your work is groundbreaking product development, pushing EV technology boundaries for urban and commercial use."},
-    {sno: '2.' , title: 'Strategic Development', text: "Our team meticulously plans and executes strategies to lead the way in electric mobility across new markets and sectors."},
-    {sno: '3.' , title: 'Brand Leadership', text: "We don't just manufacture EVs, we build a brand synonymous with quality, efficiency, and sustainability in transportation."},
-    {sno: '4.' , title: 'Global Expansion', text: "With our focus on expanding into Tier 1, 2 and 3 cities worldwide, we aim to make clean mobility accessible to all."},
-  ]
+// images
+import HeroIMage from '../images/dealership/delearship-banner.webp'
+import Womenbike from '../images/dealership/daily-commute-bike.webp'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import FAQAccordion from "../component/FAQAccordion"
+import dailycommuteicon1 from "../images/icons/warrantyicon.png"
+import { text } from '@fortawesome/fontawesome-svg-core';
+import locateimg from '../images/home/cycle.webp' 
+// prodcuts
+import escooters from '../images/dealership/e-scooters.webp'
+import miniscooter from '../images/dealership/mini-escooter.webp'
+import electricbike from '../images/dealership/electircmotorcycle.webp'
+import foldablecycle from '../images/dealership/foldablecycle.webp'
+import premiumcycle from '../images/dealership/premimcycle.webp'
+import kickscooter from '../images/dealership/electrickickscooter.webp'
 
-  const carditems = [
-    {title: 'Meet the CEO, eBikeGo Global', name:'Mohinder Kushwaha', image:'/src/images/about/khan.png', text: 'Mohinder Kushwaha is a visionary in the electric mobility industry with over 15 years of experience, specializing in innovative EV solutions and sustainable transportation strategies. He has driven transformation for businesses in India and beyond, delivering high-impact solutions tailored to diverse market needs. Mohinder’s deep understanding of electric vehicle technology and market dynamics enables him to lead teams and clients toward a greener, more connected future.',},
-    {title: 'Meet the CEO, eBikeGo Global', name:'Mohinder Kushwaha', image:'/src/images/about/khan.png', text: 'Mohinder Kushwaha is a visionary in the electric mobility industry with over 15 years of experience, specializing in innovative EV solutions and sustainable transportation strategies. He has driven transformation for businesses in India and beyond, delivering high-impact solutions tailored to diverse market needs. Mohinder’s deep understanding of electric vehicle technology and market dynamics enables him to lead teams and clients toward a greener, more connected future.',},
-    {title: 'Meet the CEO, eBikeGo Global', name:'Mohinder Kushwaha', image:'/src/images/about/khan.png', text: 'Mohinder Kushwaha is a visionary in the electric mobility industry with over 15 years of experience, specializing in innovative EV solutions and sustainable transportation strategies. He has driven transformation for businesses in India and beyond, delivering high-impact solutions tailored to diverse market needs. Mohinder’s deep understanding of electric vehicle technology and market dynamics enables him to lead teams and clients toward a greener, more connected future.',},
-    {title: 'Meet the CEO, eBikeGo Global', name:'Mohinder Kushwaha', image:'/src/images/about/khan.png', text: 'Mohinder Kushwaha is a visionary in the electric mobility industry with over 15 years of experience, specializing in innovative EV solutions and sustainable transportation strategies. He has driven transformation for businesses in India and beyond, delivering high-impact solutions tailored to diverse market needs. Mohinder’s deep understanding of electric vehicle technology and market dynamics enables him to lead teams and clients toward a greener, more connected future.',},
-    {title: 'Meet the CEO, eBikeGo Global', name:'Mohinder Kushwaha', image:'/src/images/about/khan.png', text: 'Mohinder Kushwaha is a visionary in the electric mobility industry with over 15 years of experience, specializing in innovative EV solutions and sustainable transportation strategies. He has driven transformation for businesses in India and beyond, delivering high-impact solutions tailored to diverse market needs. Mohinder’s deep understanding of electric vehicle technology and market dynamics enables him to lead teams and clients toward a greener, more connected future.',},
-  ]
+// images
+import skypher from '../images/dealership/skyperpro.webp'
+import galexeon from '../images/dealership/galexeon.webp'
+import nexara from '../images/dealership/nexara.webp'
+
+
+const dailycommute =[
+  {img: dailycommuteicon1,title:"Lifetime Warranty:", text: "On all bikes for peace of mind."},
+  {img: dailycommuteicon1,title:"Lifetime Warranty:", text: "On all bikes for peace of mind."},
+  {img: dailycommuteicon1,title:"Lifetime Warranty:", text: "On all bikes for peace of mind."},
+]
+const products=[
+  {title:'e-Scooters',text:'Effortless urban mobility with style.',btntext:'Shop Bikes',btnlink:'#scooter',image:escooters},
+  {title:'Mini e-Scooter',text:'Compact and efficient, perfect for short commutes.',btntext:'Shop Bikes',btnlink:'#scooter',image:miniscooter},
+  {title:'Electric Motorcycles',text:'Power and performance for longer rides.',btntext:'Shop Bikes',btnlink:'#scooter',image:electricbike},
+  {title:'Foldable e-Cycles',text:'Portable and convenient, great for easy storage.',btntext:'Shop Bikes',btnlink:'#scooter',image:foldablecycle},
+  {title:'Premium e-Cycles',text:' Luxury and comfort combined for the ultimate ride.',btntext:'Shop Bikes',btnlink:'#scooter',image:premiumcycle},
+  {title:'Electric Kick-Scooter',text:'Lightweight and fun, ideal for quick errands.',btntext:'Shop Bikes',btnlink:'#scooter',image:kickscooter},
+]
+const carditems = [
+  {title: 'SKYPHER PRO',image:skypher, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
+  {title: 'GALEXEON',image:galexeon, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
+  {title: 'NEXARA',image:nexara, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
+  {title: 'NEXARA',image:nexara, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
+  {title: 'NEXARA',image:nexara, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
+]
+
+
 
 export default function About() {
-    return (
+  return (
     <>
-        <HeroSection
-        backgroundImage={HeroIMage}
-        hasOverlay={false}
-        />
+    <HeroSection
+      backgroundImage={HeroIMage}
+      hasOverlay={false}
+      backgroundPosition='top'
+    />
+    
 
-        <div className="container mx-auto my-40">
-            <div className='bg-[#F9F9F9] rounded-[20px] flex flex-col md:flex-row items-center'>
-            <img src="/src/images/about/about-2.png" alt="" className='rounded-t-[20px] md:rounded-l-[20px] h-auto md:h-96'/>
-            <div className='p-10 md:px-10 '>
-                <h2>We're Your Global e-Cycle Partners</h2>
-                <p className='pb-5 pt-10 '>At eBikeGo Global, we're transforming the electric vehicle industry with innovative solutions that drive sustainable mobility. </p>
-                <p>Our team of experts is dedicated to pushing the limits of EV technology, ensuring that you stay ahead in the ever-evolving market. We're here to power your journey towards a cleaner, greener future!</p>
+    {/* sec 2 */}
+    <section>
+      <div className="md:py-40 py-20 container mx-auto">
+        <h1 className='text-dark md:pb-20 pb-10 text-center'>Clean, Timeless Designs for a <span className='text-grey'> Thrilling Ride</span></h1>
+        <div className="flex lg:flex-row flex-col gap-7  items-center">
+          <div className=" w-full md:w-2/6 ">
+            <img src={Womenbike} alt="" className='h-full object-cover'/>
+          </div>
+          <div className=" w-full md:w-4/6">
+         <div className="flex-col">
+         <h1 className='text-dark pb-5 text-start text-2xl'>Experience the Future of Mobility, <span className='text-grey'> Our eBikes are crafted to transform your daily commute into a 
+          joyful experience</span></h1>
+          <p>They are not just bicycles. They are a masterpiece of aerodynamic design, meant to make your journey through life exhilarating. 
+          At eBikeGo, we believe in the freedom and joy that cycling brings, making every ride more than just a commute.</p>
+         </div>
+         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5  text-start pt-7">
+          {dailycommute.map((item, index) =>(
+            <div  key={index} className="p-5 rounded-[20px] grey-gradient text-white">
+              <img src={item.img} alt=""  /> 
+              <h3 className='pt-5 pb-1 text-sm font-bold'>{item.title}</h3>
+              <p className='text-sm text-white'>{item.text}</p>
             </div>
-            </div> 
+          )
+          )}
         </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
 
-        <section style={{ backgroundImage: "url(/src/images/about/highway-road.webp)", backgroundPosition: 'center',backgroundSize: 'cover',}}>
-            <div className="container mx-auto py-40 text-center text-white">
-                    <h2 className='pb-10'>What Makes EBG Global Different?</h2>
-                    <p className='pb-20'>We deliver innovative electric mobility solutions, customized to meet the unique challenges of each market.<br></br> With data-driven insights and a customer-centric approach, we ensure our solutions accelerate the shift to sustainable transportation globally.</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10  text-start">
-                {ownershipcard.map((item, index) =>(
-                    <div className="p-10 rounded-lg grey-gradient">
-                    <h1 className='pb-20 '>{item.sno}</h1> 
-                    <h3 className='pb-5 text-2xl'>{item.title}</h3>
-                    <p>{item.text}</p>
-                    </div>
-                )
-                )}
-                </div>
+    {/* products  */}
+    <section>
+    <div className="md:pb-40 pb-20 container mx-auto">
+  <h1 className='text-dark md:pb-20 pb-10 text-center'>Our Product Range</h1>
+  {products.map((item, index) => (
+  <div key={index}>
+    <div className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-5 pt-5`}>
+      <img src={item.image} alt="" className="flex w-full md:w-4/6 h-full rounded-[20px]" />
+      <div className="flex flex-col justify-between w-full md:w-2/6 rounded-[20px] bg-pink p-10">
+        <div>
+          <h1 className='text-2xl'>{item.title}</h1>
+          <p className='pb-[20px]'>{item.text}</p>
+        </div>
+        <div>
+          <a href={item.btnlink} className='black-btn'>{item.btntext}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+))}
+
+
+
+</div>
+
+
+    </section>
+     {/* locate section  */}
+     <div className='flex items-end mb-[200px]  bg-center bg-cover' style={{ backgroundImage: `url(${locateimg})`,backgroundPosition: 'center',backgroundSize: 'cover', }}>
+        <div className="container mx-auto pt-[400px]">
+          <div className="bg-[#D8D8D8CC] backdrop-blur-md rounded-lg p-10  md:p-20  text-dark mb-[-100px]">
+          {/* <h3 className='pb-5'>Drive the Future: Join Our Exclusive Dealership Network</h3> */}
+          <div class="flex flex-1 flex-col md:flex-row items-start md:items-center md:mb-10 mb-6">
+            <div class="w-full md:w-3/5 gap-3">
+              <h2>Drive the Future: Join Our Exclusive Dealership Network</h2>
             </div>
-        </section>
+            <div class="flex-initial w-1/12"></div>
+          
+          </div>  
+          <p className='  before:border-underline flex items-center w-fit gap-2'>Become a leader in electric mobility by joining our exclusive dealership network. With comprehensive training and the strength of a globally recognized brand, grab the opportunity to shape the future of electric vehicles and be a leader.</p>
+          </div>
+        </div>
+    </div>          
+    {/* locate section end  */} 
 
-        <section style={{backgroundImage: "url(/src/images/about/Dyu.webp)"}} className='bg-center bg-cover my-20 relative'>
-        <div className="absolute inset-0" style={{background: "linear-gradient(90deg, rgba(0,0,0,0.8239670868347339) 18%, rgba(255,255,255,0) 100%)"}}></div>
-                <div className="container mx-auto flex flex-col md:flex-row gap-5 py-20 items-end relative z-10"> 
-                    <div className='md:w-2/5 text-white'>
-                        <h2>We’re More Than Just a Provider: Your Mobility Partners</h2>
-                        <p>At EBG Global, we go beyond delivering electric mobility solutions—we’re committed to driving the future of transportation. Our innovative strategies fuel sustainable growth and unlock the full potential of your mobility ecosystem.</p>
-                    </div>
-                    <div className='md:w-4/6 flex gap-5 mb-[-145px] flex-col md:flex-row'>
-                        <div className='bg-[#D8D8D8CC] backdrop-blur-md p-4 rounded-lg w-full'>
-                            <p className='text-[24px] font-bold'>Focused on Sustainability</p>
-                            <p>We tailor solutions to electrify your fleet and reduce carbon emissions, aligning with your long-term sustainability goals.</p>
-                        </div>
-                        <div className='bg-[#D8D8D8CC] backdrop-blur-md p-4 rounded-lg w-full'>
-                            <p className='text-[24px] font-bold'>Real Innovation, Real Results</p>
-                            <p>We focus on delivering cutting-edge EV solutions that drive measurable impact in both efficiency and profitability.</p>
-                        </div>  
-                    </div>  
-                </div>
-        </section>
+   
+    {/* slider  */}
+    <section className='bg-[#F7F7F7] md:pb-40 pb-20'>
+      <div className="container mx-auto text-center text-dark">
+        <div className="flex items-center flex-col md:pt-30 pt-20 pb-10">
+            <h1>Our featured collections</h1>
+            <p className='md:w-1/2 py-[10px]'>Discover the joy and freedom of cycling with our premium range of electric bikes. Start your journey with innovation, performance, and style.</p>
+        </div>
+        <Productslider carditems={carditems} />
 
+    
 
-        {/* testimonial slider  */}
-        <section>
-            <div className="container mx-auto py-40 ">
-                <h2>Our people behind the brand</h2>
-                <div className='relative pt-10'>
-                <Peopleslide carditems ={carditems} />
-                </div>
-            </div>
-        </section>
+      </div>
+   </section>
 
 
+   <Cta  title='Discover Your Favorite Bike' link="#"/>
+
+     
     </>
-)}
+  );
+}

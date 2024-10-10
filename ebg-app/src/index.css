@@ -5,20 +5,51 @@
 @font-face {
     font-family: 'Proxima-Nova';
     font-weight: 400;
-    src: url("assets/fonts/ProximaNova-Regular.otf") format("otf");
+    src: url("assets/fonts/ProximaNova-Regular.otf") format("opentype");
     font-style: normal;
 }
 
-h1 {
-    font-family: 'Proxima-Nova';
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 1.1;
+@font-face {
+    font-family: 'Proxima-Nova Bold';
+    font-weight: 400;
+    src: url("assets/fonts/ProximaNovaBold.otf") format("opentype");
+    font-style: normal;
+}
+@layer base {
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Proxima-Nova Bold', sans-serif;
   }
+  h1{
+    font-size: 40px;
+    @media (max-width:767px) {
+        font-size: 36px;
+        line-height: 1.1;
+    }
+  }
+  p,a,span {
+    font-family: 'Proxima-Nova', sans-serif;
+  }
+}
+
 h2{
     font-size: 42px;
     font-weight: 700;
+    line-height: 1.2;
+    @media (max-width:767px) {
+        font-size: 36px;
+        line-height: 1.1;
+    }
 }
 h3{font-size: 17px; font-weight: 400;}
+
+.swiper-slide-next{
+    background: linear-gradient(180deg, #E0E0E0 0%, rgba(249, 249, 249, 0) 100%);
+    
+}
+@media (max-width:1024px) {
+    .swiper-slide-next{background: none;}
+    .swiper-slide-active{ background: linear-gradient(180deg, #E0E0E0 0%, rgba(249, 249, 249, 0) 100%);}
+
+}
 
 
