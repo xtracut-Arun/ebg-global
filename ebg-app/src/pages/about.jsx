@@ -45,7 +45,7 @@ export default function About() {
         hasOverlay={false}
         />
 
-        <div className="container mx-auto my-40">
+        <div className="container  mx-auto my-40">
             <div className='bg-[#F9F9F9] rounded-[20px] flex flex-col md:flex-row items-center'>
             <img src={aboutimg} alt="" className='rounded-t-[20px] md:rounded-tr-[0px]  md:rounded-l-[20px] h-auto md:h-96'/>
             <div className='p-10 md:px-10 '>
@@ -78,16 +78,16 @@ export default function About() {
                 <div className="container mx-auto flex flex-col md:flex-row gap-5 py-20 items-end relative z-10"> 
                     <div className='md:w-2/5 text-white'>
                         <h2>We’re More Than Just a Provider: Your Mobility Partners</h2>
-                        <p>At EBG Global, we go beyond delivering electric mobility solutions—we’re committed to driving the future of transportation. Our innovative strategies fuel sustainable growth and unlock the full potential of your mobility ecosystem.</p>
+                        <p className='text-white pt-5'>At EBG Global, we go beyond delivering electric mobility solutions—we’re committed to driving the future of transportation. Our innovative strategies fuel sustainable growth and unlock the full potential of your mobility ecosystem.</p>
                     </div>
                     <div className='md:w-4/6 flex gap-5 mb-[-145px] flex-col md:flex-row'>
                         <div className='bg-[#D8D8D8CC] backdrop-blur-md p-4 rounded-lg w-full'>
-                            <p className='text-[24px] font-bold'>Focused on Sustainability</p>
-                            <p>We tailor solutions to electrify your fleet and reduce carbon emissions, aligning with your long-term sustainability goals.</p>
+                            <p className='text-dark text-[24px] font-bold'>Focused on Sustainability</p>
+                            <p  className='text-dark'>We tailor solutions to electrify your fleet and reduce carbon emissions, aligning with your long-term sustainability goals.</p>
                         </div>
                         <div className='bg-[#D8D8D8CC] backdrop-blur-md p-4 rounded-lg w-full'>
-                            <p className='text-[24px] font-bold'>Real Innovation, Real Results</p>
-                            <p>We focus on delivering cutting-edge EV solutions that drive measurable impact in both efficiency and profitability.</p>
+                            <p className='text-dark text-[24px] font-bold'>Real Innovation, Real Results</p>
+                            <p className='text-dark' >We focus on delivering cutting-edge EV solutions that drive measurable impact in both efficiency and profitability.</p>
                         </div>  
                     </div>  
                 </div>
@@ -106,7 +106,7 @@ export default function About() {
 
         <section >
           <div className="container mx-auto bg-[#F9F9F9] text-center rounded-lg py-20">
-            <h1 className='pb-20' ><span className='text-[#7B7B7B]'>Our Mission:</span><br /> Driving Sustainable Mobility for a Greener Future</h1>
+            <h1 className='pb-20' ><span className='text-[#7B7B7B] font-bold'>Our Mission:</span><br /> Driving Sustainable Mobility for a Greener Future</h1>
             <p className='text-[#666666]'>At EBG Global, we’re transforming transportation with innovative EV solutions. Our mission is to create sustainable ecosystems that benefit businesses and communities, offering tailored EV options for cleaner, smarter, and more efficient mobility.</p>
 
                 <div className="flex flex-col md:flex-row pt-20">
@@ -130,7 +130,7 @@ export default function About() {
             <img src={road} alt="" className='rounded-t-[20px] md:rounded-tr-[0px]  md:rounded-l-[20px] h-auto md:h-96'/>
             <div className='p-10 md:px-10 '>
                 <h2>Looking to Drive the Future of Mobility?</h2>
-                <p className='pb-5 pt-10 '>Passionate about making an impact in the EV industry? 
+                <p className='pb-10 pt-5'>Passionate about making an impact in the EV industry? 
                 Whether you're interested in innovation, technology, or simply building a sustainable future, we have a place for you. 
                 At EBG Global, we are always looking for driven, creative, and forward-thinking individuals to join our team.
                 </p>
