@@ -2,6 +2,11 @@ import React from 'react';
 import HeroSection from '../component/hero-section';
 import Peopleslide from '../component/peopleslide';
 import HeroIMage from '../images/about/about-hero.webp'
+import missionicon1 from '../images/about/mission-icons-(1).png'
+import missionicon2 from '../images/about/mission-icons-(2).png'
+import missionicon3 from '../images/about/mission-icons-(3).png'
+import missionicon4 from '../images/about/mission-icons-(4).png'
+import Cta from '../component/cta';
 
 
 
@@ -13,13 +18,18 @@ const ownershipcard =[
   ]
 
   const carditems = [
-    {title: 'Meet the CEO, eBikeGo Global', name:'Mohinder Kushwaha', image:'/src/images/about/khan.png', text: 'Mohinder Kushwaha is a visionary in the electric mobility industry with over 15 years of experience, specializing in innovative EV solutions and sustainable transportation strategies. He has driven transformation for businesses in India and beyond, delivering high-impact solutions tailored to diverse market needs. Mohinder’s deep understanding of electric vehicle technology and market dynamics enables him to lead teams and clients toward a greener, more connected future.',},
-    {title: 'Meet the CEO, eBikeGo Global', name:'Mohinder Kushwaha', image:'/src/images/about/khan.png', text: 'Mohinder Kushwaha is a visionary in the electric mobility industry with over 15 years of experience, specializing in innovative EV solutions and sustainable transportation strategies. He has driven transformation for businesses in India and beyond, delivering high-impact solutions tailored to diverse market needs. Mohinder’s deep understanding of electric vehicle technology and market dynamics enables him to lead teams and clients toward a greener, more connected future.',},
-    {title: 'Meet the CEO, eBikeGo Global', name:'Mohinder Kushwaha', image:'/src/images/about/khan.png', text: 'Mohinder Kushwaha is a visionary in the electric mobility industry with over 15 years of experience, specializing in innovative EV solutions and sustainable transportation strategies. He has driven transformation for businesses in India and beyond, delivering high-impact solutions tailored to diverse market needs. Mohinder’s deep understanding of electric vehicle technology and market dynamics enables him to lead teams and clients toward a greener, more connected future.',},
-    {title: 'Meet the CEO, eBikeGo Global', name:'Mohinder Kushwaha', image:'/src/images/about/khan.png', text: 'Mohinder Kushwaha is a visionary in the electric mobility industry with over 15 years of experience, specializing in innovative EV solutions and sustainable transportation strategies. He has driven transformation for businesses in India and beyond, delivering high-impact solutions tailored to diverse market needs. Mohinder’s deep understanding of electric vehicle technology and market dynamics enables him to lead teams and clients toward a greener, more connected future.',},
-    {title: 'Meet the CEO, eBikeGo Global', name:'Mohinder Kushwaha', image:'/src/images/about/khan.png', text: 'Mohinder Kushwaha is a visionary in the electric mobility industry with over 15 years of experience, specializing in innovative EV solutions and sustainable transportation strategies. He has driven transformation for businesses in India and beyond, delivering high-impact solutions tailored to diverse market needs. Mohinder’s deep understanding of electric vehicle technology and market dynamics enables him to lead teams and clients toward a greener, more connected future.',},
+    {title: 'Meet the CEO, eBikeGo Global', name:'Mohinder Kushwaha', image:'/src/images/about/Mohinder.png', text: 'Mohinder Kushwaha is a visionary in the electric mobility industry with over 15 years of experience, specializing in innovative EV solutions and sustainable transportation strategies. He has driven transformation for businesses in India and beyond, delivering high-impact solutions tailored to diverse market needs. Mohinder’s deep understanding of electric vehicle technology and market dynamics enables him to lead teams and clients toward a greener, more connected future.',},
+    {title: 'Chief Brand Officer', name:'Himanshu Aditya', image:'/src/images/about/Himanshu.png', text: "Himanshu Aditya is a dynamic brand strategist with over a decade of experience in crafting and scaling global brand narratives. His expertise in market positioning and brand development drives EBG Global's vision for impactful and sustainable growth.",},
+    {title: 'Chief Operating Officer', name:'Hari Kiran', image:'/src/images/about/Hari.png', text: 'Hari Kiran is a seasoned operations leader with deep expertise in electric mobility. His focus on operational efficiency and scalability has been pivotal in transforming EBG Global’s logistics and infrastructure capabilities.',},
+    {title: 'Group CEO ', name:'Dr. Irfan Khan', image:'/src/images/about/khan.png', text: 'Dr. Irfan Khan is an innovator and leader in the EV space, with over 20 years of experience in developing cutting-edge solutions for the electric mobility sector. His vision for sustainable transport continues to push EBG Global to the forefront of the EV revolution.',},    
   ]
 
+  const missioncards =[
+    {img:missionicon1 ,title:'500+', text:'Successful projects'},
+    {img:missionicon2 ,title:'500+', text:'Successful projects'},
+    {img:missionicon3 ,title:'500+', text:'Successful projects'},
+    {img:missionicon4 ,title:'500+', text:'Successful projects'}
+  ]
 export default function About() {
     return (
     <>
@@ -30,7 +40,7 @@ export default function About() {
 
         <div className="container mx-auto my-40">
             <div className='bg-[#F9F9F9] rounded-[20px] flex flex-col md:flex-row items-center'>
-            <img src="/src/images/about/about-2.png" alt="" className='rounded-t-[20px] md:rounded-l-[20px] h-auto md:h-96'/>
+            <img src="/src/images/about/about-2.png" alt="" className='rounded-t-[20px] md:rounded-tr-[0px]  md:rounded-l-[20px] h-auto md:h-96'/>
             <div className='p-10 md:px-10 '>
                 <h2>We're Your Global e-Cycle Partners</h2>
                 <p className='pb-5 pt-10 '>At eBikeGo Global, we're transforming the electric vehicle industry with innovative solutions that drive sustainable mobility. </p>
@@ -87,6 +97,40 @@ export default function About() {
             </div>
         </section>
 
+        <section >
+          <div className="container mx-auto bg-[#F9F9F9] text-center rounded-lg py-20">
+            <h1 className='pb-20' ><span className='text-[#7B7B7B]'>Our Mission:</span><br /> Driving Sustainable Mobility for a Greener Future</h1>
+            <p className='text-[#666666]'>At EBG Global, we’re transforming transportation with innovative EV solutions. Our mission is to create sustainable ecosystems that benefit businesses and communities, offering tailored EV options for cleaner, smarter, and more efficient mobility.</p>
 
+                <div className="flex flex-col md:flex-row pt-20">
+                {missioncards.map((item, index) =>(
+                   <div  key={index}
+                   className={`flex flex-col items-center w-full p-10 ${
+                     index !== missioncards.length - 1 ? 'md:border-r-2 md:border-b-0 border-b-2' : ''
+                   }`} 
+                   >
+                    <img src={item.img} alt="" className='rounded-lg '/>
+                    <p className='text-2xl py-5'>{item.title}</p>
+                    <p className='pb-5'>{item.text}</p>
+                  </div>
+                ))}
+                </div>
+          </div>
+        </section>
+
+        <div className="container mx-auto my-40">
+            <div className='bg-[#F9F9F9] rounded-[20px] flex flex-col md:flex-row items-center'>
+            <img src="/src/images/about/road.png" alt="" className='rounded-t-[20px] md:rounded-tr-[0px]  md:rounded-l-[20px] h-auto md:h-96'/>
+            <div className='p-10 md:px-10 '>
+                <h2>Looking to Drive the Future of Mobility?</h2>
+                <p className='pb-5 pt-10 '>Passionate about making an impact in the EV industry? 
+                Whether you're interested in innovation, technology, or simply building a sustainable future, we have a place for you. 
+                At EBG Global, we are always looking for driven, creative, and forward-thinking individuals to join our team.
+                </p>
+                <a href="#!" className='black-btn'>Explore career opprtunities</a>
+            </div>
+            </div> 
+        </div>
+        <Cta  title='Discover Your Favorite Bike' link="#"/>
     </>
 )}

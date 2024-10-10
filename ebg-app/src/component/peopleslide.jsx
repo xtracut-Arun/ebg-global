@@ -24,15 +24,15 @@ const peopleslide = ({ carditems }) => {
         onSwiper={(swiper) => console.log(swiper)}
       >
         {carditems.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div className="flex justify-between items-center flex-col md:flex-row  md:px-40">
-                <div className=''>
-                  <p className="text-2xl">{item.title}</p>
-                  <h3 className="text-4xl font-bold pt-5 pb-10">{item.name}</h3>
-                  <p>{item.text}</p>
+            <SwiperSlide key={index}>
+                <div className="flex justify-between items-center flex-col md:flex-row  md:px-40 ">
+                    <div className=''>
+                    <p className="text-2xl">{item.title}</p>
+                    <h3 className="text-4xl font-bold pt-5 pb-10">{item.name}</h3>
+                    <p className='md:w-9/12'>{item.text}</p>
+                    </div>
+                    <img src={item.image} alt={item.name} className="rounded-full w-1/2 md:w-1/3  mt-10" />
                 </div>
-                <img src={item.image} alt={item.name} className="rounded-full w-40 md:w-96 mt-10" />
-              </div>
             </SwiperSlide>
         ))}
       </Swiper>
@@ -43,7 +43,7 @@ const peopleslide = ({ carditems }) => {
           background-size: contain;
           background-repeat: no-repeat;
           position: absolute;
-          top: 50%;
+          top: 55%;
           transform: translateY(-50%);
           z-index: 10;
           cursor: pointer;
@@ -58,7 +58,7 @@ const peopleslide = ({ carditems }) => {
           right: 10px;
           background-image: url(${rightImage});
         }
-          @media only screen and (max-width: 600px) {.custom-prev, .custom-next { top: 88%;}}
+          @media only screen and (max-width: 768px) {.custom-prev, .custom-next { top: 88%;}}
       `}</style>
     </>
   );

@@ -7,6 +7,16 @@ import Cta from '../component/cta';
 import FAQAccordion from "../component/FAQAccordion"
 import HeroIMage from '../images/hero-back.png'
 import { LuArrowRight } from "react-icons/lu";
+import blogimg4 from "../images/home/blog-(4).png"
+import blogimg3 from "../images/home/blog-(3).png"
+import blogimg1 from "../images/home/blog-(1).png"
+import blogimg2 from "../images/home/blog-(2).png"
+import Helmetsimg from "../images/home/Helmets.png"
+import Accessories from "../images/home/Accessories.png"
+import Merchandise from "../images/home/Merchandise.png"
+import mapback from "../images/map.png"
+import cyclebg from "../images/home/cycle.webp"
+import cybg from "../images/home/cy-back.webp"
 
 
 const faqs = [
@@ -66,16 +76,16 @@ const ownershipcard =[
 ]
 
 const blogs =[
-  {image:'/src/images/home/blog-(4).png', link: '#', bloger: 'Ananya', time:'5', date: '1 july, 2024' , title:'Everything You Need to Know About eCycle..', text:'Discover the best ways to maintain and charge your ...'},
-  {image:'/src/images/home/blog-(3).png', link: '#', bloger: 'Rohan P', time:'3', date: '24 Jun, 2024' , title:'How to Choose the Right eCycle...', text:'Explore the key factors to consider when selecting an eCycle that fits your daily commute and fitness needs. ...'},
-  {image:'/src/images/home/blog-(1).png', link: '#', bloger: 'Dr. Naina R', time:'7', date: '24 Jun, 2024' , title:'The Health Benefits of Using eCycles...', text:'Learn how integrating eCycles into your routine can enhance your physical fitness..'},
-  {image:'/src/images/home/blog-(2).png', link: '#', bloger: 'Aadi S.', time:'3', date: '1 Jul , 2024' , title:'Sustainability and eCycles: Shaping a Green..', text:'Discover how eCycles are playing a crucial role in reducing carbon emissions and promoting sustainable urban mobility....'},
+  {image:blogimg4, link: '#', bloger: 'Ananya', time:'5', date: '1 july, 2024' , title:'Everything You Need to Know About eCycle..', text:'Discover the best ways to maintain and charge your ...'},
+  {image:blogimg3, link: '#', bloger: 'Rohan P', time:'3', date: '24 Jun, 2024' , title:'How to Choose the Right eCycle...', text:'Explore the key factors to consider when selecting an eCycle that fits your daily commute and fitness needs. ...'},
+  {image:blogimg1, link: '#', bloger: 'Dr. Naina R', time:'7', date: '24 Jun, 2024' , title:'The Health Benefits of Using eCycles...', text:'Learn how integrating eCycles into your routine can enhance your physical fitness..'},
+  {image:blogimg2, link: '#', bloger: 'Aadi S.', time:'3', date: '1 Jul , 2024' , title:'Sustainability and eCycles: Shaping a Green..', text:'Discover how eCycles are playing a crucial role in reducing carbon emissions and promoting sustainable urban mobility....'},
 ]
 
 const accessories = [
-  {image: '/src/images/home/Helmets.png', title: 'Smart Helmets', atext: 'Explore Smart Helmets', link: '#', text: 'Ride with protection and style. Explore our cutting-edge smart helmets designed for safety and comfort.'},
-  {image: '/src/images/home/Accessories.png', title: 'Accessories', atext: 'Shop Accessories', link: '#', text: 'From storage solutions to performance upgrades, find all the eCycle accessories you need.'},
-  {image: '/src/images/home/Merchandise.png', title: 'Merchandise', atext: 'Shop Merch', link: '#', text: 'Wear your passion. Check out our exclusive eBikeGo apparel and gear.'}
+  {image: Helmetsimg, title: 'Smart Helmets', atext: 'Explore Smart Helmets', link: '#', text: 'Ride with protection and style. Explore our cutting-edge smart helmets designed for safety and comfort.'},
+  {image: Accessories, title: 'Accessories', atext: 'Shop Accessories', link: '#', text: 'From storage solutions to performance upgrades, find all the eCycle accessories you need.'},
+  {image: Merchandise, title: 'Merchandise', atext: 'Shop Merch', link: '#', text: 'Wear your passion. Check out our exclusive eBikeGo apparel and gear.'}
 ]
 export default function Home() {
   return (
@@ -140,7 +150,7 @@ export default function Home() {
 
         {/* map section  */}
         <div className="text-white rounded-lg mt-40 p-5 md:p-20 " style={{  
-              backgroundImage: "url(/src/images/map.png)",
+              backgroundImage: `url(${mapback})`,
               backgroundPosition: 'center',
               backgroundSize: 'cover',
             }}>
@@ -154,7 +164,7 @@ export default function Home() {
    </section>
 
     {/* locate section  */}
-    <div className='flex items-end mb-[200px]  bg-center bg-cover' style={{ backgroundImage: "url(/src/images/home/cycle.webp)", }}>
+    <div className='flex items-end mb-[200px]  bg-center bg-cover' style={{ backgroundImage: `url(${cyclebg})`, }}>
         <div className="container mx-auto pt-[400px]">
           <div className="bg-[#D8D8D8CC] backdrop-blur-md rounded-lg p-10  md:p-20  text-dark mb-[-100px]">
           <h3 className='pb-5'>Our Global Space</h3>
@@ -178,7 +188,7 @@ export default function Home() {
     </div>          
     {/* locate section end  */} 
 
-    <section style={{ backgroundImage: "url(/src/images/home/cy-back.webp)", backgroundPosition: 'center',backgroundSize: 'cover',}}>
+    <section style={{ backgroundImage: `url(${cybg})`, backgroundPosition: 'center',backgroundSize: 'cover',}}>
       <div className="container mx-auto py-40 text-center text-white">
             <h2 className='pb-20'>Hassle-Free Ownership</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10  text-start">
