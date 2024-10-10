@@ -14,6 +14,7 @@ import Cta from '../component/cta';
 import highwayroad from "../images/about/highway-road.webp"
 import dyu from "../images/about/Dyu.webp"
 import road from "../images/about/road.png"
+import aboutimg from "../images/about/about-2.png"
 
 
 const ownershipcard =[
@@ -46,7 +47,7 @@ export default function About() {
 
         <div className="container mx-auto my-40">
             <div className='bg-[#F9F9F9] rounded-[20px] flex flex-col md:flex-row items-center'>
-            <img src="/src/images/about/about-2.png" alt="" className='rounded-t-[20px] md:rounded-tr-[0px]  md:rounded-l-[20px] h-auto md:h-96'/>
+            <img src={aboutimg} alt="" className='rounded-t-[20px] md:rounded-tr-[0px]  md:rounded-l-[20px] h-auto md:h-96'/>
             <div className='p-10 md:px-10 '>
                 <h2>We're Your Global e-Cycle Partners</h2>
                 <p className='pb-5 pt-10 '>At eBikeGo Global, we're transforming the electric vehicle industry with innovative solutions that drive sustainable mobility. </p>
