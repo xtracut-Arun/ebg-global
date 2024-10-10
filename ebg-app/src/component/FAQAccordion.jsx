@@ -13,11 +13,11 @@ const FAQAccordion = ({ faqs }) => {
       {faqs.map((faq, index) => (
         <div
           key={index}
-          className="border-b border-gray-300 py-4"
+          className="border-b border-gray-200 py-5 "
         >
           <div
             onClick={() => toggleFAQ(index)}
-            className="flex justify-between items-center cursor-pointer text-lg font-semibold text-gray-800"
+            className="flex justify-between items-center cursor-pointer text-lg font-semibold "
           >
             <span>{faq.question}</span>
             <span>
@@ -29,7 +29,7 @@ const FAQAccordion = ({ faqs }) => {
             </span>
           </div>
           <div
-            className={`mt-3 text-gray-600 transition-all duration-300 ${
+            className={`my-10 text-sm text-neutral-500 transition duration-150 ease-out ${
               activeIndex === index ? "block" : "hidden"
             }`}
           >
