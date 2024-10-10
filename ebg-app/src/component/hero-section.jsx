@@ -1,13 +1,13 @@
 import React from 'react';
 
-export default function HeroSection({ backgroundImage, title, description, buttons, hasOverlay = true }) {
+export default function HeroSection({ backgroundImage, title, description, buttons,backgroundPosition, hasOverlay = true }) {
   return (
     <div
       className="h-[90vh] relative"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: backgroundPosition || 'center',
         backgroundRepeat: 'no-repeat',
       }}
     >

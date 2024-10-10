@@ -19,6 +19,9 @@ export default {
         'primary': '#191919', 
         'secondary': '#FFFFFF',
         'underline' : '#191919',
+        'grey':'#767A79',
+        'pink':'#FFFAEA',
+
       },
     },
   },
@@ -28,8 +31,14 @@ export default {
         '.text-dark':{
           color:'#191919',
         },
+        '.text-grey':{
+          color:theme('colors.grey'),
+        },
+        'bg-lightgrey':{
+          background: 'linear-gradient(180deg, #E0E0E0 0%, rgba(249, 249, 249, 0) 100%)'},
         '.grey-gradient' :{
           background:'linear-gradient(140deg, rgba(88,88,88,1) 14%, rgba(26,26,26,1) 100%)'}, 
+          '.bg-pink':{backgroundColor:theme('colors.pink')},
         '.black-btn': {
           backgroundColor: theme('colors.primary'),
           color: theme('colors.white'),
