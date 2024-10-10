@@ -32,10 +32,10 @@ const ownershipcard =[
   ]
 
   const missioncards =[
-    {img:missionicon1 ,title:'500+', text:'Successful projects'},
-    {img:missionicon2 ,title:'500+', text:'Successful projects'},
-    {img:missionicon3 ,title:'500+', text:'Successful projects'},
-    {img:missionicon4 ,title:'500+', text:'Successful projects'}
+    {img:missionicon1 ,title:'50+', text:'Successful projects'},
+    {img:missionicon2 ,title:'50Cr+', text:'Revenue Generated for Clients'},
+    {img:missionicon3 ,title:'500Cr+', text:'In Investments'},
+    {img:missionicon4 ,title:'30%+', text:'Reduction in Carbon Emissions'}
   ]
 export default function About() {
     return (

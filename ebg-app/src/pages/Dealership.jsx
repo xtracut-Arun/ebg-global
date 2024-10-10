@@ -15,6 +15,8 @@ import Womenbike from '../images/dealership/daily-commute-bike.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import FAQAccordion from "../component/FAQAccordion"
 import dailycommuteicon1 from "../images/icons/warrantyicon.png"
+import dailycommuteicon2 from "../images/icons/warrantyicon2.png"
+import dailycommuteicon3 from "../images/icons/warrantyicon3.png"
 import { text } from '@fortawesome/fontawesome-svg-core';
 import locateimg from '../images/home/cycle.webp' 
 // prodcuts
@@ -31,10 +33,10 @@ import galexeon from '../images/dealership/galexeon.webp'
 import nexara from '../images/dealership/nexara.webp'
 
 
-const dailycommute =[
+const dailycommute =[ 
   {img: dailycommuteicon1,title:"Lifetime Warranty:", text: "On all bikes for peace of mind."},
-  {img: dailycommuteicon1,title:"Lifetime Warranty:", text: "On all bikes for peace of mind."},
-  {img: dailycommuteicon1,title:"Lifetime Warranty:", text: "On all bikes for peace of mind."},
+  {img: dailycommuteicon3,title:"Hassle-Free Returns: :", text: "Free ground shipping and easy returns."},
+  {img: dailycommuteicon2,title:"Proudly Made:", text: "Designed, engineered, and assembled in India."},
 ]
 const products=[
   {title:'e-Scooters',text:'Effortless urban mobility with style.',btntext:'Shop Bikes',btnlink:'#scooter',image:escooters},
@@ -47,8 +49,6 @@ const products=[
 const carditems = [
   {title: 'SKYPHER PRO',image:skypher, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
   {title: 'GALEXEON',image:galexeon, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
-  {title: 'NEXARA',image:nexara, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
-  {title: 'NEXARA',image:nexara, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
   {title: 'NEXARA',image:nexara, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
 ]
 
@@ -67,7 +67,7 @@ export default function About() {
     {/* sec 2 */}
     <section>
       <div className="md:py-40 py-20 container mx-auto">
-        <h1 className='text-dark md:pb-20 pb-10 text-center'>Clean, Timeless Designs for a <span className='text-grey'> Thrilling Ride</span></h1>
+        <h1 className='text-dark md:pb-20 pb-10 text-center'>Clean, Timeless Designs for a <span className='text-grey font-bold'> Thrilling Ride</span></h1>
         <div className="flex lg:flex-row flex-col gap-7  items-center">
           <div className=" w-full md:w-2/6 ">
             <img src={Womenbike} alt="" className='h-full object-cover'/>
@@ -109,7 +109,7 @@ export default function About() {
           <p className='pb-[20px]'>{item.text}</p>
         </div>
         <div>
-          <a href={item.btnlink} className='black-btn'>{item.btntext}</a>
+          <a href={item.btnlink} className='black-btn gap-2 flex items-center w-fit'>{item.btntext} <LuArrowRight /></a>
         </div>
       </div>
     </div>
@@ -131,10 +131,10 @@ export default function About() {
             <div class="w-full md:w-3/5 gap-3">
               <h2>Drive the Future: Join Our Exclusive Dealership Network</h2>
             </div>
-            <div class="flex-initial w-1/12"></div>
-          
-          </div>  
-          <p className='  before:border-underline flex items-center w-fit gap-2'>Become a leader in electric mobility by joining our exclusive dealership network. With comprehensive training and the strength of a globally recognized brand, grab the opportunity to shape the future of electric vehicles and be a leader.</p>
+            
+           </div>  
+          <p className='pb-10 md:w-2/3 w-full'>Become a leader in electric mobility by joining our exclusive dealership network. With comprehensive training and the strength of a globally recognized brand, grab the opportunity to shape the future of electric vehicles and be a leader.</p>
+          <a href="#" className='underline-btn  before:border-underline flex items-center w-fit gap-2'>Locate your nearest center <LuArrowRight /></a>
           </div>
         </div>
     </div>          

@@ -35,6 +35,7 @@ const ProductSlider = ({ carditems }) => {
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
+      loop={true}
       // onSlideChange={handleSlideChange}
       navigation={{
         nextEl: '.custom-next',
