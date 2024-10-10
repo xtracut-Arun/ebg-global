@@ -21,7 +21,7 @@ export default function HeroSection({ backgroundImage, title, description, butto
         <div className="container mx-auto relative  z-10 h-full flex flex-col items-start justify-center px-8 text-white">
         <div className=" md:w-1/2">
           <h1 className="mb-4 ">{title}</h1>
-          <p className="text-lg mb-8">{description}</p>
+          <p className="text-lg mb-8 text-[#AAAAAA]">{description}</p>
           <div className="space-x-3 md:space-x-6">
             {buttons?.map((button, index) => (
               <a

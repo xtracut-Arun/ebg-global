@@ -5,7 +5,7 @@ import { RiTwitterXFill,RiFacebookFill, RiInstagramLine , RiLinkedinFill,RiYoutu
 const quicklinks =[
     {page:'home' , link: '/'},
     {page:'about' , link: '/about'},
-    {page:'home' , link: '/'},
+    {page:'Dealership' , link: '/dealership'},
 ]
 const socialicons = [
     {img:<RiFacebookFill />, link: '#'},
