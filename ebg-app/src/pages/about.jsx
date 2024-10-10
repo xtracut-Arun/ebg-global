@@ -6,8 +6,14 @@ import missionicon1 from '../images/about/mission-icons-(1).png'
 import missionicon2 from '../images/about/mission-icons-(2).png'
 import missionicon3 from '../images/about/mission-icons-(3).png'
 import missionicon4 from '../images/about/mission-icons-(4).png'
+import Mohinder from '../images/about/Mohinder.png'
+import Himanshu from '../images/about/Himanshu.png'
+import Hari from '../images/about/Hari.png'
+import khan from '../images/about/khan.png'
 import Cta from '../component/cta';
-
+import highwayroad from "../images/about/highway-road.webp"
+import dyu from "../images/about/Dyu.webp"
+import road from "../images/about/road.png"
 
 
 const ownershipcard =[
@@ -18,10 +24,10 @@ const ownershipcard =[
   ]
 
   const carditems = [
-    {title: 'Meet the CEO, eBikeGo Global', name:'Mohinder Kushwaha', image:'/src/images/about/Mohinder.png', text: 'Mohinder Kushwaha is a visionary in the electric mobility industry with over 15 years of experience, specializing in innovative EV solutions and sustainable transportation strategies. He has driven transformation for businesses in India and beyond, delivering high-impact solutions tailored to diverse market needs. Mohinder’s deep understanding of electric vehicle technology and market dynamics enables him to lead teams and clients toward a greener, more connected future.',},
-    {title: 'Chief Brand Officer', name:'Himanshu Aditya', image:'/src/images/about/Himanshu.png', text: "Himanshu Aditya is a dynamic brand strategist with over a decade of experience in crafting and scaling global brand narratives. His expertise in market positioning and brand development drives EBG Global's vision for impactful and sustainable growth.",},
-    {title: 'Chief Operating Officer', name:'Hari Kiran', image:'/src/images/about/Hari.png', text: 'Hari Kiran is a seasoned operations leader with deep expertise in electric mobility. His focus on operational efficiency and scalability has been pivotal in transforming EBG Global’s logistics and infrastructure capabilities.',},
-    {title: 'Group CEO ', name:'Dr. Irfan Khan', image:'/src/images/about/khan.png', text: 'Dr. Irfan Khan is an innovator and leader in the EV space, with over 20 years of experience in developing cutting-edge solutions for the electric mobility sector. His vision for sustainable transport continues to push EBG Global to the forefront of the EV revolution.',},    
+    {title: 'Meet the CEO, eBikeGo Global', name:'Mohinder Kushwaha', image:Mohinder, text: 'Mohinder Kushwaha is a visionary in the electric mobility industry with over 15 years of experience, specializing in innovative EV solutions and sustainable transportation strategies. He has driven transformation for businesses in India and beyond, delivering high-impact solutions tailored to diverse market needs. Mohinder’s deep understanding of electric vehicle technology and market dynamics enables him to lead teams and clients toward a greener, more connected future.',},
+    {title: 'Chief Brand Officer', name:'Himanshu Aditya', image:Himanshu, text: "Himanshu Aditya is a dynamic brand strategist with over a decade of experience in crafting and scaling global brand narratives. His expertise in market positioning and brand development drives EBG Global's vision for impactful and sustainable growth.",},
+    {title: 'Chief Operating Officer', name:'Hari Kiran', image:Hari, text: 'Hari Kiran is a seasoned operations leader with deep expertise in electric mobility. His focus on operational efficiency and scalability has been pivotal in transforming EBG Global’s logistics and infrastructure capabilities.',},
+    {title: 'Group CEO ', name:'Dr. Irfan Khan', image:khan, text: 'Dr. Irfan Khan is an innovator and leader in the EV space, with over 20 years of experience in developing cutting-edge solutions for the electric mobility sector. His vision for sustainable transport continues to push EBG Global to the forefront of the EV revolution.',},    
   ]
 
   const missioncards =[
@@ -49,7 +55,7 @@ export default function About() {
             </div> 
         </div>
 
-        <section style={{ backgroundImage: "url(/src/images/about/highway-road.webp)", backgroundPosition: 'center',backgroundSize: 'cover',}}>
+        <section style={{ backgroundImage: `url(${highwayroad})`, backgroundPosition: 'center',backgroundSize: 'cover',}}>
             <div className="container mx-auto py-40 text-center text-white">
                     <h2 className='pb-10'>What Makes EBG Global Different?</h2>
                     <p className='pb-20'>We deliver innovative electric mobility solutions, customized to meet the unique challenges of each market.<br></br> With data-driven insights and a customer-centric approach, we ensure our solutions accelerate the shift to sustainable transportation globally.</p>
@@ -66,7 +72,7 @@ export default function About() {
             </div>
         </section>
 
-        <section style={{backgroundImage: "url(/src/images/about/Dyu.webp)"}} className='bg-center bg-cover my-20 relative'>
+        <section style={{backgroundImage: `url(${dyu})`}} className='bg-center bg-cover my-20 relative'>
         <div className="absolute inset-0" style={{background: "linear-gradient(90deg, rgba(0,0,0,0.8239670868347339) 18%, rgba(255,255,255,0) 100%)"}}></div>
                 <div className="container mx-auto flex flex-col md:flex-row gap-5 py-20 items-end relative z-10"> 
                     <div className='md:w-2/5 text-white'>
@@ -120,7 +126,7 @@ export default function About() {
 
         <div className="container mx-auto my-40">
             <div className='bg-[#F9F9F9] rounded-[20px] flex flex-col md:flex-row items-center'>
-            <img src="/src/images/about/road.png" alt="" className='rounded-t-[20px] md:rounded-tr-[0px]  md:rounded-l-[20px] h-auto md:h-96'/>
+            <img src={road} alt="" className='rounded-t-[20px] md:rounded-tr-[0px]  md:rounded-l-[20px] h-auto md:h-96'/>
             <div className='p-10 md:px-10 '>
                 <h2>Looking to Drive the Future of Mobility?</h2>
                 <p className='pb-5 pt-10 '>Passionate about making an impact in the EV industry? 

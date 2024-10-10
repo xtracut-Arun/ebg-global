@@ -17,6 +17,9 @@ import Merchandise from "../images/home/Merchandise.png"
 import mapback from "../images/map.png"
 import cyclebg from "../images/home/cycle.webp"
 import cybg from "../images/home/cy-back.webp"
+import Skypher from "../images/home/Skypher-Pro.png"
+import Electrus from "../images/home/Electrus-Pro.png"
+import Galexeon from "../images/home//Galexeon.png"
 
 
 const faqs = [
@@ -63,9 +66,9 @@ const faqs = [
 ];
 
 const carditems = [
-  {title: 'Skypher Pro',image:'/src/images/home/Skypher-Pro.png', sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
-  {title: 'Electrus Pro',image:'/src/images/home/Electrus-Pro.png', sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
-  {title: 'Galexeon',image:'/src/images/home/Galexeon.png', sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
+  {title: 'Skypher Pro',image:Skypher, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
+  {title: 'Electrus Pro',image:Electrus, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
+  {title: 'Galexeon',image:Galexeon, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
 ]
 
 const ownershipcard =[
