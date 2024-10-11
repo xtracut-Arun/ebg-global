@@ -32,7 +32,7 @@ const ProductSlider = ({ carditems }) => {
   return (
     <>
     <div className='relative md:px-[60px]'>
-    <Swiper
+    <Swiper className='dealershipslider'
       spaceBetween={50}
       slidesPerView={1}
       loop={true}

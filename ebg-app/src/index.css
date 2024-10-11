@@ -42,13 +42,13 @@ h2{
 }
 h3{font-size: 17px; font-weight: 400;}
 
-.swiper-slide-next{
+.dealershipslider .swiper-slide-next{
     background: linear-gradient(180deg, #E0E0E0 0%, rgba(249, 249, 249, 0) 100%);
     
 }
 @media (max-width:1024px) {
-    .swiper-slide-next{background: none;}
-    .swiper-slide-active{ background: linear-gradient(180deg, #E0E0E0 0%, rgba(249, 249, 249, 0) 100%);}
+    .dealershipslider .swiper-slide-next{background: none;}
+   .dealershipslider .swiper-slide-active{ background: linear-gradient(180deg, #E0E0E0 0%, rgba(249, 249, 249, 0) 100%);}
 
 }
 

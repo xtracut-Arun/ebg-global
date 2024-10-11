@@ -34,6 +34,9 @@ export default {
         '.text-grey':{
           color:theme('colors.grey'),
         },
+        '.bg-grey':{
+          background:theme('colors.grey'),
+        },
         'bg-lightgrey':{
           background: 'linear-gradient(180deg, #E0E0E0 0%, rgba(249, 249, 249, 0) 100%)'},
         '.grey-gradient' :{
