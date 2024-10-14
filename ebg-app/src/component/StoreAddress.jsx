@@ -24,12 +24,13 @@ export default function Storeaddress() {
   return (
     <>
     <section className='container mx-auto p-0'>
-    <div className="flex  justify-between md:ps-0 ps-5">
-        <div className="md:w-9/12">   <h1 className='py-10'>Office addresses</h1></div>
-        <div className="md:w-3/12 flex justify-end items-center py-10 inline-block align-baseline">
-       
-    <div className="custom-prev"></div>
-    <div className="custom-next"></div>
+    <div className="flex  items-end justify-center py-10 gap-3">
+        <div className="md:w-9/12">   
+            <h1>Office addresses</h1>
+          </div>
+        <div className="md:w-3/12 flex  items-center  justify-end">
+            <div className="custom-prev"></div>
+             <div className="custom-next"></div>
     
         </div>
  
@@ -65,15 +66,16 @@ export default function Storeaddress() {
     >
       {address.map((item, index) => (
         <SwiperSlide key={index} className=' rounded-[20px] pb-20 ps-5'>
-          <div className='text-left text-start flex flex-col justify-between  min-h-[320px]	'>
+          <div className='text-left text-start flex flex-col justify-between  md:min-h-[340px]	min-h-[280px]'>
             <div className="flex flex-col items-start	">
             <img src={store} alt={item.title} className="h-[48px] text-start object-contain rounded-t-lg pb-2"/>
             <p>eBikeGo Global</p>
               <h3 className="text-3xl py-3">{item.title}</h3>
+              <p className='pb-5'>{item.address}</p>
             </div>
              
                <div className="flex flex-col">
-               <p className='pb-5'>{item.address}</p>
+               
                 <a href='tel:{"$:item.phone"}' className="black-btn text-sm text-start mx-0 d-block">
                   Call Now {item.phone}
                 </a>
@@ -96,7 +98,7 @@ export default function Storeaddress() {
         background-repeat: no-repeat;
         // position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(0%);
         z-index: 10;
         cursor: pointer;
       }
