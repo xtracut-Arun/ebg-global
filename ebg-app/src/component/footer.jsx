@@ -23,16 +23,16 @@ export default function Footer () {
                 <div>
                     <img src={footlogo} alt="" />
                     <div className="flex gap-10 py-5" >
-                        {quicklinks.map ((item) =>(
-                            <a href={item.link} className="uppercase text-base text-[#75807E]">{item.page}</a>
+                        {quicklinks.map ((item, index) =>(
+                            <a href={item.link} key={index} className="uppercase text-base text-[#75807E]">{item.page}</a>
                         ))}
                     </div>
                 </div> 
                <div>
                 <p className="text-dark text-xl pt-5">Follow us:</p>
                 <div className="flex gap-5 pt-5">
-                {socialicons.map ((item) =>(
-                    <a href={item.link} className="text-[#1D1D1D]">{item.img}</a>
+                {socialicons.map ((item,index) =>(
+                    <a href={item.link} key={index}  className="text-[#1D1D1D]">{item.img}</a>
                 ))}
                 </div>
                </div>

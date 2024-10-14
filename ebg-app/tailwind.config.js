@@ -21,7 +21,7 @@ export default {
         'underline' : '#191919',
         'grey':'#767A79',
         'pink':'#FFFAEA',
-
+        'dark_grey': '#484138',
       },
     },
   },
@@ -36,6 +36,9 @@ export default {
         },
         '.bg-grey':{
           background:theme('colors.grey'),
+        },
+        '.dark_grey':{
+          color:theme('colors.dark_grey'),
         },
         'bg-lightgrey':{
           background: 'linear-gradient(180deg, #E0E0E0 0%, rgba(249, 249, 249, 0) 100%)'},

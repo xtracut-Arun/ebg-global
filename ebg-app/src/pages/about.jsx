@@ -2,6 +2,9 @@ import React from 'react';
 import HeroSection from '../component/hero-section';
 import Peopleslide from '../component/peopleslide';
 import HeroIMage from '../images/about/about-hero.webp'
+import Cta from '../component/cta';
+
+// images 
 import missionicon1 from '../images/about/mission-icons-(1).png'
 import missionicon2 from '../images/about/mission-icons-(2).png'
 import missionicon3 from '../images/about/mission-icons-(3).png'
@@ -10,7 +13,6 @@ import Mohinder from '../images/about/Mohinder.png'
 import Himanshu from '../images/about/Himanshu.png'
 import Hari from '../images/about/Hari.png'
 import khan from '../images/about/khan.png'
-import Cta from '../component/cta';
 import highwayroad from "../images/about/highway-road.webp"
 import dyu from "../images/about/Dyu.webp"
 import road from "../images/about/road.png"
@@ -62,7 +64,7 @@ export default function About() {
                     <p className='pb-20'>We deliver innovative electric mobility solutions, customized to meet the unique challenges of each market.<br></br> With data-driven insights and a customer-centric approach, we ensure our solutions accelerate the shift to sustainable transportation globally.</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10  text-start">
                 {ownershipcard.map((item, index) =>(
-                    <div className="p-10 rounded-lg grey-gradient">
+                    <div key={index} className="p-10 rounded-lg grey-gradient">
                     <h1 className='pb-20 '>{item.sno}</h1> 
                     <h3 className='pb-5 text-2xl'>{item.title}</h3>
                     <p>{item.text}</p>
@@ -138,6 +140,7 @@ export default function About() {
             </div>
             </div> 
         </div>
+
         <Cta  title='Discover Your Favorite Bike' link="#"/>
     </>
 )}

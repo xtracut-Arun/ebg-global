@@ -20,16 +20,16 @@ const Header = () => {
   const menuItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Services', path: '/services' },
+    { name: 'Prodcuts', path: '/prodcuts' },
     { name: 'Contact', path: '/contact' },
     { name: 'Dealership', path: '/dealership' }
   ];
 
   // Dropdown items under "Services"
   const dropdownItems = [
-    { name: 'Web Development', path: '/services/web-development' },
-    { name: 'Mobile Development', path: '/services/mobile-development' },
-    { name: 'SEO Optimization', path: '/services/seo-optimization' }
+    { name: 'Skypher', path: '/products/skypher' },
+    { name: 'Mobile Development', path: '/prodcuts/mobile-development' },
+    { name: 'SEO Optimization', path: '/prodcuts/seo-optimization' }
   ];
 
   // SVG Icon for dropdown
@@ -107,8 +107,8 @@ const Header = () => {
           <div className={`items-center justify-between ${isOpen ? 'block' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white  ">
               {menuItems.map((item, index) => (
-                <li key={index} className="relative" ref={item.name === 'Services' ? dropdownRef : null}>
-                  {item.name === 'Services' ? (
+                <li key={index} className="relative" ref={item.name === 'Prodcuts' ? dropdownRef : null}>
+                  {item.name === 'Prodcuts' ? (
                     // Dropdown Trigger
                     <button
                       onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -130,7 +130,7 @@ const Header = () => {
                   )}
 
                   {/* Dropdown Menu */}
-                  {item.name === 'Services' && isDropdownOpen && (
+                  {item.name === 'Prodcuts' && isDropdownOpen && (
                     <div className="absolute z-10 top-full left-0 mt-2 w-48 bg-white  rounded">
                       <ul className="py-2">
                         {dropdownItems.map((dropdownItem, idx) => (

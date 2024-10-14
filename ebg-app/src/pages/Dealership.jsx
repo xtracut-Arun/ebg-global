@@ -43,7 +43,7 @@ const products=[
   {title:'Mini e-Scooter',text:'Compact and efficient, perfect for short commutes.',btntext:'Shop Bikes',btnlink:'#scooter',image:miniscooter},
   {title:'Electric Motorcycles',text:'Power and performance for longer rides.',btntext:'Shop Bikes',btnlink:'#scooter',image:electricbike},
   {title:'Foldable e-Cycles',text:'Portable and convenient, great for easy storage.',btntext:'Shop Bikes',btnlink:'#scooter',image:foldablecycle},
-  {title:'Premium e-Cycles',text:' Luxury and comfort combined for the ultimate ride.',btntext:'Shop Bikes',btnlink:'#scooter',image:premiumcycle},
+  {title:'Premium e-Cycles',text:'Luxury and comfort combined for the ultimate ride.',btntext:'Shop Bikes',btnlink:'#scooter',image:premiumcycle},
   {title:'Electric Kick-Scooter',text:'Lightweight and fun, ideal for quick errands.',btntext:'Shop Bikes',btnlink:'#scooter',image:kickscooter},
 ]
 const carditems = [
