@@ -7,50 +7,32 @@ import mail from '../images/icons/svg/mail.svg'
 import Storeaddress from '../component/StoreAddress'
 
 
-// slider
-import sliderbg from '../images/dealership/daily-commute-bike.png'
+// slider 
+import skypersliderimg from '../images/skypher/skypersliderimg.webp'
 import CombinedSection from '../component/CombinedSection';
 
 
-const slides = [
+const skyperproducts = [
     {
-      title: 'Removable Battery',
-      description: 'Convenient charging at any location—home, work, or on the go.',
-      image: 'path/to/your-image1.png', // Dynamic Image Path
+      title: 'Lightweight Aluminum Alloy Frame',
+      description: 'Durable, yet easy to handle at just 22 kg.'
     },
     {
-      title: 'Eco-Friendly',
-      description: 'A cleaner alternative to traditional vehicles.',
-      image: 'path/to/your-image2.png', // Dynamic Image Path
+      title: 'Disc Brakes ',
+      description: 'Front and rear disc brakes for maximum stopping power.'
     },
     {
-      title: 'Modern Design',
-      description: 'Sleek and stylish for the modern rider.',
-      image: 'path/to/your-image3.png', // Dynamic Image Path
+      title: 'Comfortable Ride ',
+      description: '27.5” tires for smooth and stable rides on any terrain.'
     },
     {
-      title: 'Modern Design',
-      description: 'Sleek and stylish for the modern rider.',
-      image: 'path/to/your-image3.png', // Dynamic Image Path
+      title: 'Fast Charging ',
+      description: 'Charge fully in 4-5 hours, ready to go whenever you are.'
     },
-    {
-      title: 'Modern Design',
-      description: 'Sleek and stylish for the modern rider.',
-      image: 'path/to/your-image3.png', // Dynamic Image Path
-    },
-    {
-      title: 'Modern Design',
-      description: 'Sleek and stylish for the modern rider.',
-      image: 'path/to/your-image3.png', // Dynamic Image Path
-    },
-    {
-      title: 'Modern Design',
-      description: 'Sleek and stylish for the modern rider.',
-      image: 'path/to/your-image3.png', // Dynamic Image Path
-    },
+  
   ];
 
-  const backgroundImage = sliderbg; // Dynamic Background Image
+  const backgroundImage = skypersliderimg; 
 
 
 
@@ -95,7 +77,7 @@ export default function Contact() {
 
         
             <Storeaddress/>
-            <CombinedSection slides={slides} backgroundImage={backgroundImage} />
+            <CombinedSection slides={skyperproducts} backgroundImage={skypersliderimg} />
 
 
 
