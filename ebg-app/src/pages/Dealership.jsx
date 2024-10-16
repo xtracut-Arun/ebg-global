@@ -127,8 +127,8 @@ export default function About() {
         <div className="container mx-auto pt-[400px]">
           <div className="bg-[#D8D8D8CC] backdrop-blur-md rounded-lg p-10  md:p-20  text-dark mb-[-100px]">
           {/* <h3 className='pb-5'>Drive the Future: Join Our Exclusive Dealership Network</h3> */}
-          <div class="flex flex-1 flex-col md:flex-row items-start md:items-center md:mb-10 mb-6">
-            <div class="w-full md:w-3/5 gap-3">
+          <div className="flex flex-1 flex-col md:flex-row items-start md:items-center md:mb-10 mb-6">
+            <div className="w-full md:w-3/5 gap-3">
               <h2>Drive the Future: Join Our Exclusive Dealership Network</h2>
             </div>
             

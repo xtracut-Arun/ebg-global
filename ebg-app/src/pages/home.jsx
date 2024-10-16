@@ -171,16 +171,16 @@ export default function Home() {
         <div className="container mx-auto pt-[400px]">
           <div className="bg-[#D8D8D8CC] backdrop-blur-md rounded-lg p-10  md:p-20  text-dark mb-[-100px]">
           <h3 className='pb-5'>Our Global Space</h3>
-          <div class="flex flex-1 flex-col md:flex-row items-start md:items-center mb-10 ">
-            <div class="w-full md:w-3/5 gap-3">
+          <div className="flex flex-1 flex-col md:flex-row items-start md:items-center mb-10 ">
+            <div className="w-full md:w-3/5 gap-3">
               <h2>Experience our world.<br></br>Test ride your future eCycle and discover the best of eco-friendly mobility.</h2>
             </div>
-            <div class="flex-initial w-1/12"></div>
-            <div class="flex-initial w-full md:w-1/6 mt-10 md:mt-0">
+            <div className="flex-initial w-1/12"></div>
+            <div className="flex-initial w-full md:w-1/6 mt-10 md:mt-0">
               <h1>50+</h1>
               <p>Cities</p>
             </div>
-            <div class="flex-initial w-full md:w-1/6">
+            <div className="flex-initial w-full md:w-1/6">
             <h1>100+</h1>
             <p>EBG Global Spaces</p>
             </div>

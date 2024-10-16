@@ -7,6 +7,52 @@ import mail from '../images/icons/svg/mail.svg'
 import Storeaddress from '../component/StoreAddress'
 
 
+// slider
+import sliderbg from '../images/dealership/daily-commute-bike.png'
+import CombinedSection from '../component/CombinedSection';
+
+
+const slides = [
+    {
+      title: 'Removable Battery',
+      description: 'Convenient charging at any location—home, work, or on the go.',
+      image: 'path/to/your-image1.png', // Dynamic Image Path
+    },
+    {
+      title: 'Eco-Friendly',
+      description: 'A cleaner alternative to traditional vehicles.',
+      image: 'path/to/your-image2.png', // Dynamic Image Path
+    },
+    {
+      title: 'Modern Design',
+      description: 'Sleek and stylish for the modern rider.',
+      image: 'path/to/your-image3.png', // Dynamic Image Path
+    },
+    {
+      title: 'Modern Design',
+      description: 'Sleek and stylish for the modern rider.',
+      image: 'path/to/your-image3.png', // Dynamic Image Path
+    },
+    {
+      title: 'Modern Design',
+      description: 'Sleek and stylish for the modern rider.',
+      image: 'path/to/your-image3.png', // Dynamic Image Path
+    },
+    {
+      title: 'Modern Design',
+      description: 'Sleek and stylish for the modern rider.',
+      image: 'path/to/your-image3.png', // Dynamic Image Path
+    },
+    {
+      title: 'Modern Design',
+      description: 'Sleek and stylish for the modern rider.',
+      image: 'path/to/your-image3.png', // Dynamic Image Path
+    },
+  ];
+
+  const backgroundImage = sliderbg; // Dynamic Background Image
+
+
 
 
 export default function Contact() {
@@ -20,12 +66,12 @@ export default function Contact() {
                     {/* form */}
                     <div className="grid md:grid-cols-2 grid-cols-1 grid-rows-2 gap-5">
 
-                    <input type="text" name="username" id="firstname" autocomplete="username" placeholder="Your Name" class="block flex-1 rounded-lg border bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" />
-                    <input type="text" name="phoen" id="phonenumber" autocomplete="username" placeholder="Your Phone" class="block flex-1 rounded-lg border bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" />
-                    <input type="text" name="phoen" id="phonenumber" autocomplete="username" placeholder="Your Email" class="block flex-1 rounded-lg border bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" />
-                    <input type="text" name="phoen" id="phonenumber" autocomplete="username" placeholder="Subject" class="block flex-1 rounded-lg border bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" />
+                    <input type="text" name="username" id="firstname" autoComplete="username" placeholder="Your Name" className="block flex-1 rounded-lg border bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" />
+                    <input type="text" name="phoen" id="phonenumber" autoComplete="username" placeholder="Your Phone" className="block flex-1 rounded-lg border bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" />
+                    <input type="text" name="phoen" id="phonenumber" autoComplete="username" placeholder="Your Email" className="block flex-1 rounded-lg border bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" />
+                    <input type="text" name="phoen" id="phonenumber" autoComplete="username" placeholder="Subject" className="block flex-1 rounded-lg border bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" />
                     </div>
-                    <div className="grid w-full py-5"><textarea type="text" name="phoen" id="phonenumber" autocomplete="username" placeholder="Your message (optional)" class="block flex-1 rounded-lg border bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" />
+                    <div className="grid w-full py-5"><textarea type="text" name="phoen" id="phonenumber" autoComplete="username" placeholder="Your message (optional)" className="block flex-1 rounded-lg border bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" />
                     </div>
                     <a href="#!" className="black-btn text-sm">
                   Submit
@@ -49,6 +95,9 @@ export default function Contact() {
 
         
             <Storeaddress/>
+            <CombinedSection slides={slides} backgroundImage={backgroundImage} />
+
+
 
         
 
