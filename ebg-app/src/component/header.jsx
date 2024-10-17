@@ -20,7 +20,7 @@ const Header = () => {
   const menuItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Prodcuts', path: '/prodcuts' },
+    { name: 'Prodcuts', path: '/products' },
     { name: 'Contact', path: '/contact' },
     { name: 'Dealership', path: '/dealership' }
   ];
@@ -28,8 +28,13 @@ const Header = () => {
   // Dropdown items under "Services"
   const dropdownItems = [
     { name: 'Skypher', path: '/products/skypher' },
-    { name: 'Mobile Development', path: '/prodcuts/mobile-development' },
-    { name: 'SEO Optimization', path: '/prodcuts/seo-optimization' }
+    { name: 'Electrus Pro', path: '/products/electrus-pro' },
+    { name: 'Galexeons', path: '/products/galexeon' },
+    { name: 'Nexara', path: '/products/nexara' },
+    { name: 'Electrus', path: '/products/electrus' },
+    { name: 'Skypher pro ', path: '/products/skypher-pro ' },
+    { name: 'Voltoria', path: '/products/voltoria' },
+
   ];
 
   // SVG Icon for dropdown

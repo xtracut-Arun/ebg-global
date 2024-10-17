@@ -10,7 +10,7 @@ const CombinedSection = ({ slides, backgroundImage }) => {
 
   return (
     <section
-      className="combined-section items-end flex justify-center pb-5"
+      className="combined-section items-end flex justify-center pb-5 mb-20"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
