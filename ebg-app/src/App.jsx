@@ -8,7 +8,7 @@ import Dealership from './pages/Dealership';
 import Skypher from './pages/products/skypher';
 import Electrus_pro from './pages/products/electrus_pro';
 import Electrus from './pages/products/electrus';
-import Galexeon from './pages/products/Galexeon';
+import Galexeon from './pages/products/galexeon';
 import Skypher_pro from './pages/products/skypher_pro';
 import Nexara from './pages/products/nexara';
 import Voltoria from './pages/products/voltoria';
@@ -32,10 +32,7 @@ function App() {
           <Route path="/products/nexara" element={<Nexara />} />
           <Route path="/products/skypher-pro" element={<Skypher_pro />} />
           <Route path="/products/voltoria" element={<Voltoria />} />
-          {/*<Route path="/contact" element={<Contact />} /> */}
           <Route path="/contact" element={<Contact />} />
-          {/*<Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} /> */}
         </Routes>
       </div>
       <Footer />
