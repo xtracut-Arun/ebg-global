@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Header from './component/header';
-import Footer from './component/footer'
+import Footer from './component/footer';
 import Home from './pages/home';
 import About from './pages/about';
 import Dealership from './pages/Dealership';
@@ -13,12 +14,12 @@ import Skypher_pro from './pages/products/skypher_pro';
 import Nexara from './pages/products/nexara';
 import Voltoria from './pages/products/voltoria';
 import Contact from './pages/Contact';
-// import Services from './Services';
-// import Contact from './Contact';
+import ScrollToTop from './component/ScrollToTop'; // Importing the ScrollToTop component
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />  {/* Add ScrollToTop here */}
       <Header />
       <div className="pt-20 ">
         <Routes>

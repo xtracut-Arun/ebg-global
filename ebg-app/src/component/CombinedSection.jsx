@@ -10,7 +10,7 @@ const CombinedSection = ({ slides, backgroundImage }) => {
 
   return (
     <section
-      className="combined-section items-end flex justify-center pb-5 mb-20"
+      className="combined-section items-end flex justify-end pb-5 mb-20"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
@@ -21,25 +21,25 @@ const CombinedSection = ({ slides, backgroundImage }) => {
       <Swiper
        
         spaceBetween={30} 
-        slidesPerView={4}
+        slidesPerView={1.2}
         breakpoints={{
           640: {
             slidesPerView: 1.2,
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 2.2,
+            slidesPerView: 1.2,
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 1.2,
             spaceBetween: 20,
           },
         }} 
-        loop={true} 
+        loop={false} 
         navigation={false} 
         grabCursor={true}
-        className="custom-swiper"
+        className="custom-swiper flex md:w-2/6 pl-0.5	" style={{marginRight:'0px',marginLeft:'5px'}}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index} className='bg-white px-6 rounded-lg 	' >

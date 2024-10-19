@@ -21,8 +21,8 @@ const Header = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Prodcuts', path: '/products' },
+    { name: 'Dealership', path: '/dealership' },
     { name: 'Contact', path: '/contact' },
-    { name: 'Dealership', path: '/dealership' }
   ];
 
   // Dropdown items under "Services"

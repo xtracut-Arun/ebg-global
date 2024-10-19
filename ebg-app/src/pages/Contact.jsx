@@ -8,31 +8,9 @@ import Storeaddress from '../component/StoreAddress'
 
 
 // slider 
-import skypersliderimg from '../images/skypher/skypersliderimg.webp'
-import CombinedSection from '../component/CombinedSection';
 
 
-const skyperproducts = [
-    {
-      title: 'Lightweight Aluminum Alloy Frame',
-      description: 'Durable, yet easy to handle at just 22 kg.'
-    },
-    {
-      title: 'Disc Brakes ',
-      description: 'Front and rear disc brakes for maximum stopping power.'
-    },
-    {
-      title: 'Comfortable Ride ',
-      description: '27.5” tires for smooth and stable rides on any terrain.'
-    },
-    {
-      title: 'Fast Charging ',
-      description: 'Charge fully in 4-5 hours, ready to go whenever you are.'
-    },
-  
-  ];
-
-  const backgroundImage = skypersliderimg; 
+  // const backgroundImage = skypersliderimg; 
 
 
 
@@ -77,11 +55,5 @@ export default function Contact() {
 
         
             <Storeaddress/>
-            <CombinedSection slides={skyperproducts} backgroundImage={skypersliderimg} />
-
-
-
-        
-
     </>
 )}
