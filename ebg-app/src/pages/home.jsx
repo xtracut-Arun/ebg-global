@@ -144,7 +144,7 @@ export default function Home() {
                 </div>
                 <div className="space-x-6 my-5 mt-10">
                   <a href={item.buttonlink} className='black-btn text-sm'>Book a test ride</a>
-                  <a href={item.learnmore} className='underline underline-offset-4'>learn More</a>
+                  <a href={item.learnmore} className='underline underline-offset-4'>Learn More</a>
                 </div>
               </div>   
               </SwiperSlide>

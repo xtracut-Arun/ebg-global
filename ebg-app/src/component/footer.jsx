@@ -24,7 +24,7 @@ export default function Footer () {
             <div className="flex flex-col md:flex-row justify-between py-10">
                 <div>
                     <img src={footlogo} alt="" />
-                    <div className="flex gap-10 py-5" >
+                    <div className="flex gap-10 py-5 flex-col md:flex-row" >
                         {quicklinks.map ((item, index) =>(
                             <a href={item.link} key={index} className="uppercase text-base text-[#75807E]">{item.page}</a>
                         ))}

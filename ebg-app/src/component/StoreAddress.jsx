@@ -23,12 +23,12 @@ const address = [
 export default function Storeaddress() {
   return (
     <>
-    <section className='container mx-auto p-0'>
-    <div className="flex  items-end justify-center py-10 gap-3">
+    <section className='container mx-auto '>
+    <div className="flex  items-center justify-between py-10 gap-3">
         <div className="md:w-9/12">   
             <h1>Office addresses</h1>
           </div>
-        <div className="md:w-3/12 flex  items-center  justify-end">
+        <div className="flex  items-center bg-[#F9F9F9] justify-between w-fit align-center rounded-[40px] px-4 py-2">
             <div className="custom-prev"></div>
              <div className="custom-next"></div>
     
@@ -66,7 +66,7 @@ export default function Storeaddress() {
     >
       {address.map((item, index) => (
         <SwiperSlide key={index} className=' rounded-[20px] pb-20 ps-5'>
-          <div className='text-left text-start flex flex-col justify-between  md:min-h-[340px]	min-h-[280px]'>
+          <div className='text-start flex flex-col justify-between  md:min-h-[340px]	min-h-[280px]'>
             <div className="flex flex-col items-start	">
             <img src={store} alt={item.title} className="h-[48px] text-start object-contain rounded-t-lg pb-2"/>
             <p>eBikeGo Global</p>
@@ -92,11 +92,11 @@ export default function Storeaddress() {
           </div>
     <style jsx>{`
       .custom-prev, .custom-next {
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
         background-size: contain;
         background-repeat: no-repeat;
-        // position: absolute;
+        position: relative;
         top: 50%;
         transform: translateY(0%);
         z-index: 10;
@@ -104,12 +104,12 @@ export default function Storeaddress() {
       }
 
       .custom-prev {
-        left: 10px;
+        left: 0px;
         background-image: url(${leftImage});
       }
       .swiper-button-disabled{opacity:.5;}
       .custom-next {
-        right: 10px;
+        right: -10px;
         background-image: url(${rightImage});
       }
         @media only screen and (max-width: 600px) {.custom-prev, .custom-next { top: 88%;}}

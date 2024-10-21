@@ -99,7 +99,7 @@ export default function About() {
         {/* testimonial slider  */}
         <section>
             <div className="container mx-auto py-40 ">
-                <h2>Our people behind the brand</h2>
+                <h2 className='text-center'>Our people behind the brand</h2>
                 <div className='relative pt-10'>
                 <Peopleslide carditems ={carditems} />
                 </div>
@@ -119,8 +119,8 @@ export default function About() {
                    }`} 
                    >
                     <img src={item.img} alt="" className='rounded-lg '/>
-                    <p className='text-2xl py-5'>{item.title}</p>
-                    <p className='pb-5'>{item.text}</p>
+                    <p className='text-2xl py-5 font-bold text-dark'>{item.title}</p>
+                    <p className='pb-5 text-dark'>{item.text}</p>
                   </div>
                 ))}
                 </div>
