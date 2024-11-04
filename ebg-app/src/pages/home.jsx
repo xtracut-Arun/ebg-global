@@ -192,7 +192,7 @@ export default function Home() {
     {/* locate section end  */} 
 
     <section style={{ backgroundImage: `url(${cybg})`, backgroundPosition: 'center',backgroundSize: 'cover',}}>
-      <div className="container mx-auto py-40 text-center text-white">
+      <div className="container mx-auto py-20 text-center text-white">
             <h2 className='pb-20'>Hassle-Free Ownership</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10  text-start">
           {ownershipcard.map((item, index) =>(

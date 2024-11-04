@@ -66,7 +66,7 @@ export default function About() {
 
     {/* sec 2 */}
     <section>
-      <div className="md:py-40 py-20 container mx-auto">
+      <div className="md:py-20 py-20 container mx-auto">
         <h1 className='text-dark md:pb-20 pb-10 text-center'>Clean, Timeless Designs for a <span className='text-grey font-bold'> Thrilling Ride</span></h1>
         <div className="flex lg:flex-row flex-col gap-7  items-center">
           <div className=" w-full md:w-2/6 ">

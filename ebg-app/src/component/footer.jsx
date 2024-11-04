@@ -10,11 +10,11 @@ const quicklinks =[
     { page: 'Contact', link: '/contact' },
 ]
 const socialicons = [
-    {img:<RiFacebookFill />, link: '#'},
-    {img:<RiTwitterXFill />, link: '#!'},
-    {img:<RiInstagramLine />, link: '#!'},
-    {img:<RiLinkedinFill />, link: '#!'},
-    {img:<RiYoutubeLine  />, link: '#!'},
+    {img:<RiFacebookFill />, link: 'https://www.facebook.com/eBikeGo'},
+    {img:<RiTwitterXFill />, link: 'https://x.com/ebikego'},
+    {img:<RiInstagramLine />, link: 'https://www.instagram.com/ebikego/'},
+    {img:<RiLinkedinFill />, link: 'https://www.linkedin.com/company/ebikego/'},
+    // {img:<RiYoutubeLine  />, link: '#!'},
 ]
 
 export default function Footer () {
