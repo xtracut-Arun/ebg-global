@@ -20,7 +20,7 @@ const Header = () => {
   const menuItems = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
-    { name: 'Prodcuts', path: '/products' },
+    { name: 'Products', path: '/products' },
     { name: 'Dealership', path: '/dealership' },
     { name: 'Contact Us', path: '/contact' },
   ];
@@ -119,8 +119,8 @@ const Header = () => {
           <div className={`items-center justify-between ${isOpen ? 'block' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white">
               {menuItems.map((item, index) => (
-                <li key={index} className="relative" ref={item.name === 'Prodcuts' ? dropdownRef : null}>
-                  {item.name === 'Prodcuts' ? (
+                <li key={index} className="relative" ref={item.name === 'Products' ? dropdownRef : null}>
+                  {item.name === 'Products' ? (
                     // Dropdown Trigger
                     <a
                       onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -143,7 +143,7 @@ const Header = () => {
                   )}
 
                   {/* Dropdown Menu */}
-                  {item.name === 'Prodcuts' && isDropdownOpen && (
+                  {item.name === 'Products' && isDropdownOpen && (
                     <div className="absolute z-10 top-full left-0 mt-2 w-48 bg-white rounded">
                       <ul className="py-2">
                         {dropdownItems.map((dropdownItem, idx) => (

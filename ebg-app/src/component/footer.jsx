@@ -1,5 +1,5 @@
 import React from "react";
-import footlogo from "../images/ebg-Global-clr.png"
+import footlogo from "../images/ebg-global-footer-logo.svg"
 import { RiTwitterXFill,RiFacebookFill, RiInstagramLine , RiLinkedinFill,RiYoutubeLine  } from "react-icons/ri";
 
 const quicklinks =[

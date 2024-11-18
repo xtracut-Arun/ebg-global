@@ -34,9 +34,9 @@ import nexara from '../images/dealership/nexara.webp'
 
 
 const dailycommute =[ 
-  {img: dailycommuteicon1,title:"Lifetime Warranty:", text: "On all bikes for peace of mind."},
-  {img: dailycommuteicon3,title:"Hassle-Free Returns: :", text: "Free ground shipping and easy returns."},
-  {img: dailycommuteicon2,title:"Proudly Made:", text: "Designed, engineered, and assembled in India."},
+  {img: dailycommuteicon1,title:"Lifetime Warranty:", text: "Peace of mind for every ride."},
+  {img: dailycommuteicon3,title:"Hassle-Free Returns: :", text: "Free shipping and easy returns."},
+  {img: dailycommuteicon2,title:"Proudly Made In India:", text: "Designed, engineered, and assembled in India."},
 ]
 const products=[
   {title:'e-Scooters',text:'Effortless urban mobility with style.',btntext:'Shop Bikes',btnlink:'#scooter',image:escooters},
@@ -74,10 +74,8 @@ export default function About() {
           </div>
           <div className=" w-full md:w-4/6">
          <div className="flex-col">
-         <h1 className='text-dark pb-5 text-start text-2xl'>Experience the Future of Mobility, <span className='text-grey'> Our eBikes are crafted to transform your daily commute into a 
-          joyful experience</span></h1>
-          <p>They are not just bicycles. They are a masterpiece of aerodynamic design, meant to make your journey through life exhilarating. 
-          At eBikeGo, we believe in the freedom and joy that cycling brings, making every ride more than just a commute.</p>
+         <h1 className='text-dark pb-5 text-start text-2xl'>Experience the Future of Mobility, <span className='text-grey'> Our eBikes redefine commuting, turning each journey into a delightful experience.</span></h1>
+          <p>More than just bicycles, they’re engineered for effortless freedom, blending sleek design with exhilarating performance. At eBikeGo, we bring the joy of riding back to your daily routine </p>
          </div>
          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5  text-start pt-7">
           {dailycommute.map((item, index) =>(
