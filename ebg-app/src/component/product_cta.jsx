@@ -11,10 +11,11 @@ export default function product_cta({product_cta_content}) {
                     <div className="flex flex-col-reverse lg:flex-row bg-[#F2F2F2] rounded-[20px]">
                         <div className='flex flex-col justify-between p-10 lg:px-20 lg:pt-20 lg:pb-10' >
                             <div className='lg:pb-0 pb-10'>
-                                <p className='text-dark text-[24px] pb-2'>{item.title}</p>
+                                <p className='text-dark text-[24px] pb-2 font-bold'>{item.title}</p>
+                                <p className=' text-dark font-medium  text-[24px] pt-5 pb-3'>{item.sub_title}</p>
                                 <p>{item.text}</p>
                             </div>
-                            <div>
+                            <div className='pt-10'>
                                 <p>{item.point1}</p>
                                 <p className='py-3'>{item.point2}</p>
                                 <p>{item.point3}</p>

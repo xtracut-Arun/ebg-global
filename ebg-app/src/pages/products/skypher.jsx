@@ -2,11 +2,13 @@ import React from 'react';
 import HeroSection from '../../component/hero-section';
 import Productmilestone from "../../component/Productmilestone"
 import Leftright_products from "../../component/leftright_product"
+import CombinedSection from '../../component/CombinedSection';
 import Cards_product from "../../component/cards_product"
 import Product_cta from "../../component/product_cta"
 import Cta from '../../component/cta';
 
 // images 
+import slider_bg from '../../images/galexeon-slider-bg.png'
 import skypherbg from '../../images/skypher/skypher.webp'
 import girlincycle from '../../images/skypher/girlincycle.webp'
 import skyphercard1 from '../../images/skypher/SKYPHERcard-(1).png'
@@ -30,9 +32,29 @@ const product_cta_content =[
 const cardsproduct =[
     {img : skyphercard2 , value: '25 km/h', text : "Top speed"},
     {img : skyphercard3 , value: '36V 10Ah', text : "Battery capacity*"},
-    // {img : skyphercard4 , value: 'Shimano 7', text : "Speed Gear System"},
+    {img : skyphercard4 , value: 'Shimano 7', text : "Speed Gear System"},
     {img : skyphercard1 , value: '4 Hrs +', text : "Fast Charging"},
 ]
+
+const skyperproducts = [
+    {
+      title: 'Lightweight Aluminum Alloy Frame',
+      description: 'Durable, yet easy to handle at just 22 kg.'
+    },
+    {
+      title: 'Disc Brakes ',
+      description: 'Front and rear disc brakes for maximum stopping power.'
+    },
+    {
+      title: 'Comfortable Ride ',
+      description: '27.5” tires for smooth and stable rides on any terrain.'
+    },
+    {
+      title: 'Fast Charging ',
+      description: 'Charge fully in 4-5 hours, ready to go whenever you are.'
+    },
+  
+  ];
 
 export default function skypher() {
     return (
@@ -76,6 +98,8 @@ export default function skypher() {
 
 
         <Cards_product cardsproduct={cardsproduct} />
+
+        <CombinedSection slides={skyperproducts} backgroundImage={slider_bg} />
 
         <Product_cta product_cta_content={product_cta_content} />
 

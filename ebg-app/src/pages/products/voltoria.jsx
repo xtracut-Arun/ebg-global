@@ -34,6 +34,8 @@ const cardsproduct =[
     {img : image2 , value: 'Battery Capacity', text : "48V 10Ah removable battery—charge anywhere for convenience."},
     {img : image2 , value: 'Max Speed', text : "25 km/h throttle for controlled yet efficient speed."},
     {img : image2 , value: 'Compact Frame', text : "The 22.35 kg steel frame is designed for strength and agility, making your ride as smooth as possible."},
+    {img : image2 , value: 'Shimano 7-Speed Gears', text : "Shift smoothly between seven gears for optimal performance on any incline or road condition."},
+    {img : image2 , value: 'Comfortable Ride', text : "Front fork suspension ensures smooth, shock-absorbed rides on any terrain."},
 ]
 
 const LRcontent = [

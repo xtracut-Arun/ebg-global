@@ -23,6 +23,7 @@ import SKYPHERcta from '../../images/skypher/SKYPHERcta.png'
 
 const product_cta_content =[
     {   title:"Ride With Confidence",
+        sub_title:"Durable, Lightweight Frame",
         image: SKYPHERcta,
         point1:"Seamless Riding Experience",
         point2:"Smooth, Comfortable Rides",

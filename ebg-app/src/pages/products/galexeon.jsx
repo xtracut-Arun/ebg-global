@@ -41,24 +41,15 @@ const LRcontent = [
     {img : image , title: "35 km Range in Pure Electric Mode",  text2: "Enjoy the freedom to explore with Galexeon’s long-lasting 48V 10Ah battery, delivering up to 35 km in pure electric mode and 55 km with pedal assist."},
 ]
 
-const skyperproducts = [
+const galexon_slides = [
     {
-      title: 'Lightweight Aluminum Alloy Frame',
-      description: 'Durable, yet easy to handle at just 22 kg.'
+      title: 'Top Speed of 25 km/h',
+      description: 'Feel the rush as you reach speeds up to 25 km/h, providing the perfect balance between performance and safety.'
     },
     {
-      title: 'Disc Brakes ',
-      description: 'Front and rear disc brakes for maximum stopping power.'
-    },
-    {
-      title: 'Comfortable Ride ',
-      description: '27.5” tires for smooth and stable rides on any terrain.'
-    },
-    {
-      title: 'Fast Charging ',
-      description: 'Charge fully in 4-5 hours, ready to go whenever you are.'
-    },
-  
+      title: 'Front and Rear Disc Brakes',
+      description: 'Precision braking power with disc brakes ensures smooth stops and ultimate control on any terrain.'
+    },  
   ];
 
 
@@ -76,6 +67,7 @@ export default function galexeon() {
             distance="55"
             mode="Pedal assist*"
             slogan="With the Galexeon, experience greater range and control. "
+            below_slogan="Designed to keep you going longer, Galexeon helps you conquer every terrain with ease."
             // col-1
             col1_num="25"
             col1_metric="km/h"
@@ -98,7 +90,7 @@ export default function galexeon() {
 
         <Cards_product cardsproduct={cardsproduct} />
 
-        <CombinedSection slides={skyperproducts} backgroundImage={slider_bg} />
+        <CombinedSection slides={galexon_slides} backgroundImage={slider_bg} />
 
         <Product_cta product_cta_content={product_cta_content} />
 
