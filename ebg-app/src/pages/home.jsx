@@ -106,8 +106,8 @@ export default function Home() {
     <section className='bg-[#F7F7F7] pb-40'>
       <div className="container mx-auto text-center text-dark">
         <div className="flex items-center flex-col py-40  ">
-            <h1 className='md:w-1/2'>Powering the World, One Ride at a Time</h1>
-            <p className='md:w-1/2'>Experience the future of mobility with eBikeGo. Our electric bikes are crafted for explorers, urban commuters, and eco-conscious riders alike, combining cutting-edge technology with sustainable design. </p>
+            <h1 className='md:w-4/6'>Powering the World, One Ride at a Time</h1>
+            <p className='md:w-4/6'>Experience the future of mobility with eBikeGo. Our electric bikes are crafted for explorers, urban commuters, and eco-conscious riders alike, combining cutting-edge technology with sustainable design. </p>
         </div>
         <h2 className='pb-20'>Pick your Bicycle</h2>
         <Swiper
@@ -161,7 +161,7 @@ export default function Home() {
 
               
             <h3 className='text-green-600 pb-5'>EBG Global Network™</h3>
-            <h2 className='pb-10 '>Powering eco-friendly commutes worldwide with the largest eCycle network.</h2>
+            <h2 className='pb-10 md:px-10'>Powering eco-friendly commutes worldwide with the largest eCycle network.</h2>
             {/* <a href="#" className='underline underline-offset-8'>Learn more </a> */}
             </div>
         </div>
@@ -223,8 +223,8 @@ export default function Home() {
                 <img src={item.image} alt="" className='w-full h-full object-cover  rounded-lg'/>
               </div>
               <div className='py-5'>
-                <div className="flex "><p>By {item.bloger} • {item.time} min read • {item.date}</p></div>
-                <p className='text-2xl pt-3 pb-1 '>{item.title}</p>
+                <div className="flex "><p className='text-dark'>By {item.bloger} • {item.time} min read • {item.date}</p></div>
+                <p className='text-2xl pt-3 pb-1 text-dark'>{item.title}</p>
                 <p className='text-neutral-500'>{item.text}</p>
               </div>
             </a>
@@ -241,10 +241,10 @@ export default function Home() {
         <h2 className='text-center'>Enhance Your eBikeGo Experience</h2>
         <div className="flex  flex-col md:flex-row gap-10 md:gap-10 mt-20">
             {accessories.map((item, index) =>(
-              <div className='w-full md:w-1/3 pt-5 md-pt-0'>
+              <div className='w-full md:w-1/3 pt-5 md-pt-0 '>
                 <img src={item.image} alt="" className='w-full  rounded-lg'/>
-                <p className='text-2xl py-5'>{item.title}</p>
-                <p className='pb-5 '>{item.text}</p>
+                <p className='text-2xl py-5 text-dark'>{item.title}</p>
+                <p className='pb-5 text-dark'>{item.text}</p>
                 {/* <a href={item.link} className='underline-btn flex items-center w-fit gap-2 before:border-underline'>{item.atext} <LuArrowRight /></a> */}
               </div>
             ))}

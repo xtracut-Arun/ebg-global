@@ -28,10 +28,10 @@ const product_cta_content =[
         text : "Crafted with a precision-engineered aluminum alloy frame, the Skypher eCycle offers unmatched durability while ensuring a lightweight and agile ride for effortless maneuverability, whether in the city or on rugged terrains."},]
     
 const cardsproduct =[
-    {img : skyphercard2 , value: '25 km/h', text : "Efficient motor for seamless commuting."},
-    {img : skyphercard3 , value: '36V 10Ah', text : "36V 10Ah removable battery—charge it anywhere."},
-    {img : skyphercard4 , value: 'Shimano 7', text : "Speed Gear System"},
-    {img : skyphercard1 , value: '4 Hrs', text : "Fast Charging Time"},
+    {img : skyphercard2 , value: '25 km/h', text : "Top speed"},
+    {img : skyphercard3 , value: '36V 10Ah', text : "Battery capacity*"},
+    // {img : skyphercard4 , value: 'Shimano 7', text : "Speed Gear System"},
+    {img : skyphercard1 , value: '4 Hrs +', text : "Fast Charging"},
 ]
 
 export default function skypher() {
@@ -48,22 +48,23 @@ export default function skypher() {
             distance="55"
             mode="Pedal assist*"
             slogan="Keep riding. Further than ever."
+            col_heading="What matters first?"
             // col-1
-            col1_num="55"
+            col1_num="25"
             col1_metric="km/h"
-            col1_text="Max Speed"
+            col1_text="Top Speed"
             // col-2 
-            col2_num="55"
-            col2_metric="km/h"
+            col2_num="367v"
+            col2_metric="10Ah"
             col2_text="Max Speed"
             // col-3 
-            col3_num="55"
-            col3_metric="km/h"
-            col3_text="Max Speed"
+            col3_num="4"
+            col3_metric=" hrs+"
+            col3_text="Fast Charging"
             // col-4 
-            col4_num="Effortless Folding"
+            // col4_num="Effortless Folding"
             // col4_metric="km/h"
-            col4_text="in seconds for easy storage and transport"
+            // col4_text="in seconds for easy storage and transport"
         />
 
         <section style={{ backgroundImage: `url(${DyuCycle})`}} className='background-cover bg-right text-center'>

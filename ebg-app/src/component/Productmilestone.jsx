@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default function Productmilestone({title, discription, distance, mode, slogan ,col1_num,col1_metric,col1_text, col2_num,col2_metric,col2_text, col3_num,col3_metric,col3_text, col4_num,col4_metric,col4_text}) {
+export default function Productmilestone({title, discription, distance, mode, slogan,col_heading ,col1_num,col1_metric,col1_text, col2_num,col2_metric,col2_text, col3_num,col3_metric,col3_text, col4_num,col4_metric,col4_text}) {
     return (
         <>
         <div className="container  mx-auto py-0 pt-20 md:py-20 ">
@@ -19,7 +19,7 @@ export default function Productmilestone({title, discription, distance, mode, sl
             </div>
             <p className='text-4xl text-center text-[#484138]'>{slogan}</p>
             <div className="container w-full my-10 mx-auto  flex flex-col md:flex-row gap-10 md:gap-13 lg:gap-10  justify-between bg-[#E2E2E2] p-14 rounded-[50px]">
-                <p className='text-2xl basis-1/4'>First things first:</p>
+                <p className='text-2xl basis-1/4'>{col_heading}</p>
                 <div className='basis-1/5'>
                     <p className='text-4xl text-[#484138]'>{col1_num} <span className='text-lg'>{col1_metric}</span></p>
                     <p>{col1_text}</p>

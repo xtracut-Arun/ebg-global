@@ -44,20 +44,20 @@ const cardsproduct =[
 
 const skyperproducts = [
     {
-      title: 'Lightweight Aluminum Alloy Frame',
-      description: 'Durable, yet easy to handle at just 22 kg.'
+      title: 'Effortless Folding Mechanism',
+      description: 'Fold your Electrus Pro in seconds, making it perfect for small apartments, car trunks, and office storage. When you’re ready to ride again, just unfold and go.'
     },
     {
-      title: 'Disc Brakes ',
-      description: 'Front and rear disc brakes for maximum stopping power.'
+      title: 'Smooth Ride with Shock Absorption',
+      description: 'Tackle any path with confidence. The shock absorption system ensures a smooth and comfortable ride on rough city streets or off-road paths.'
     },
     {
-      title: 'Comfortable Ride ',
-      description: '27.5” tires for smooth and stable rides on any terrain.'
+      title: 'Confidence in Every Turn ',
+      description: 'Sturdy handlebars and precision steering allow you to navigate sharp turns or rugged trails with ease, giving you the ultimate control on every ride.'
     },
     {
-      title: 'Fast Charging ',
-      description: 'Charge fully in 4-5 hours, ready to go whenever you are.'
+      title: 'Tailored Seat Elevation for Ultimate Comfort ',
+      description: 'The adjustable seat offers a perfect ergonomic fit for riders of all sizes, enhancing both comfort and pedaling efficiency for longer rides.'
     },
   
   ];
@@ -77,6 +77,7 @@ export default function electrus_pro() {
             mode="Pedal assist mode*"
             slogan="Go farther with Electrus Pro, designed to offer an impressive range for all your adventures."
             // col-1
+            col_heading="First things first:"           
             col1_num="25"
             col1_metric="km/h"
             col1_text="Max Speed"
