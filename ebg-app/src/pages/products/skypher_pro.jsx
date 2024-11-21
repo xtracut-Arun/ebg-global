@@ -43,20 +43,16 @@ const LRcontent = [
 
 const sliderproducts = [
     {
-      title: 'Lightweight Aluminum Alloy Frame',
-      description: 'Durable, yet easy to handle at just 22 kg.'
+      title: 'Removable Battery',
+      description: 'Convenient charging at any location—home, work, or on the go.'
     },
     {
-      title: 'Disc Brakes ',
-      description: 'Front and rear disc brakes for maximum stopping power.'
+      title: 'Seamless Suspension',
+      description: 'Front fork suspension for smooth rides over any terrain.'
     },
     {
-      title: 'Comfortable Ride ',
-      description: '27.5” tires for smooth and stable rides on any terrain.'
-    },
-    {
-      title: 'Fast Charging ',
-      description: 'Charge fully in 4-5 hours, ready to go whenever you are.'
+      title: 'Disc Brakes for Safety',
+      description: 'Maximum stopping power with front and rear disc brakes, ensuring your ride is as safe as it is thrilling.'
     },
   
   ];

@@ -44,22 +44,9 @@ const LRcontent = [
 
 const sliderproducts = [
     {
-      title: 'Lightweight Aluminum Alloy Frame',
-      description: 'Durable, yet easy to handle at just 22 kg.'
-    },
-    {
-      title: 'Disc Brakes ',
-      description: 'Front and rear disc brakes for maximum stopping power.'
-    },
-    {
-      title: 'Comfortable Ride ',
-      description: '27.5” tires for smooth and stable rides on any terrain.'
-    },
-    {
-      title: 'Fast Charging ',
-      description: 'Charge fully in 4-5 hours, ready to go whenever you are.'
-    },
-  
+      title: 'Convenient Basket',
+      description: 'Take your essentials with you using the handy front-mounted basket, ideal for quick runs or commuting to work.'
+    },  
   ];
 
 
