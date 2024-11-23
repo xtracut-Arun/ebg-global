@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import HeroSection from '../component/hero-section';
 import Productslider from '../component/ProductSlider';
+import Dealership_form from '../component/dealership_form';
 import Cta from '../component/cta';
 import { LuArrowRight } from "react-icons/lu";
 
@@ -19,6 +20,7 @@ import dailycommuteicon2 from "../images/icons/warrantyicon2.png"
 import dailycommuteicon3 from "../images/icons/warrantyicon3.png"
 import { text } from '@fortawesome/fontawesome-svg-core';
 import locateimg from '../images/home/cycle.webp' 
+import dealershipformbg from '../images/dealership/dealershipform.png' 
 // prodcuts
 import escooters from '../images/dealership/e-scooters.webp'
 import miniscooter from '../images/dealership/mini-escooter.webp'
@@ -52,6 +54,11 @@ const carditems = [
   {title: 'NEXARA',image:nexara, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
 ]
 
+const formTexts = {
+  line1: "Become a Part of Our",
+  line2: "Expanding Dealership Family",
+  line3: "Partner with us and let's drive the eco-friendly future together",
+};
 
 
 export default function About() {
@@ -63,11 +70,16 @@ export default function About() {
       backgroundPosition='top'
     />
     
+    <section >
+      <div className="container mx-auto  pt-20">
+      <h1 className='text-dark md:py-20 py-20 px-5  text-center bg-[#F9F9F9] rounded-[20px]'>Clean, Timeless Designs for a <span className='text-grey font-bold'> Thrilling Ride</span></h1>
+      </div>
+    </section>
 
     {/* sec 2 */}
     <section>
       <div className="md:py-20 py-20 container mx-auto">
-        <h1 className='text-dark md:pb-20 pb-10 text-center'>Clean, Timeless Designs for a <span className='text-grey font-bold'> Thrilling Ride</span></h1>
+        
         <div className="flex lg:flex-row flex-col gap-7  items-center">
           <div className=" w-full md:w-2/6 ">
             <img src={Womenbike} alt="" className='h-full object-cover'/>
@@ -91,12 +103,16 @@ export default function About() {
         </div>
       </div>
     </section>
-    
+
+    <Dealership_form 
+    formTexts={formTexts} 
+    dealershipformbg={dealershipformbg} 
+    />
 
     {/* products  */}
     <section>
     <div className="md:pb-40 pb-20 container mx-auto">
-  <h1 className='text-dark md:pb-20 pb-10 text-center'>Our Product Range</h1>
+  <h1 className='text-dark  pb-10 text-center'>Our Product Range</h1>
   {products.map((item, index) => (
   <div key={index}>
     <div className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-5 pt-5`}>

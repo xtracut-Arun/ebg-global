@@ -15,6 +15,8 @@ import Nexara from './pages/products/nexara';
 import Voltoria from './pages/products/voltoria';
 import Contact from './pages/Contact';
 import ScrollToTop from './component/ScrollToTop'; // Importing the ScrollToTop component
+import Preebook from './pages/Preebook';
+
 
 function App() {
   return (
@@ -34,6 +36,7 @@ function App() {
           <Route path="/products/skypher-pro" element={<Skypher_pro />} />
           <Route path="/products/voltoria" element={<Voltoria />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="products/:productSlug/prebook"  element={<Preebook />} />
         </Routes>
       </div>
       <Footer />

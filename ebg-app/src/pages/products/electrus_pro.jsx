@@ -3,9 +3,9 @@ import HeroSection from '../../component/hero-section';
 import Productmilestone from "../../component/Productmilestone"
 import Leftright_products from "../../component/leftright_product"
 import Cards_product from "../../component/cards_product"
-import Product_cta from "../../component/product_cta"
 import Cta from '../../component/cta';
 import CombinedSection from '../../component/CombinedSection';
+import Product_details from "../../component/product_details_slider"
 
 // images 
 import Electrusbg from '../../images/Electrus/Electrus.webp'
@@ -25,14 +25,7 @@ const LRcontent = [
     {img : girlincycle , title: 'Built for Compactness, Designed for Performance', text : "With Electrus Pro, you don't have to choose between power and portability.",  text2: "Engineered with precision, this eCycle delivers the best ride while being easy to fold and carry along wherever your journey takes you."},
 ]
 
-const product_cta_content =[
-    {   title:"Lightweight, Built to Last",
-        image: SKYPHERcta,
-        point1:"Seamless Riding Experience",
-        point2:"Smooth, Comfortable Rides",
-        point3:"Convenient Charging On-the-Go",
-        text : "Crafted with a precision-engineered aluminum alloy frame, the Skypher eCycle offers unmatched durability while ensuring a lightweight and agile ride for effortless maneuverability, whether in the city or on rugged terrains."},]
-    
+
 const cardsproduct =[
     {img : Product6 , value: '36V 250W Motor', text : "Provides efficient, seamless assistance for daily commutes and weekend adventures."},
     {img : Product5 , value: 'Folding Capability', text : "The Electrus Pro folds effortlessly for easy storage in small spaces like apartments or car trunks."},
@@ -61,6 +54,50 @@ const skyperproducts = [
     },
   
   ];
+
+  const product_content =[
+    {
+      image: SKYPHERcta,
+      title: "Lightweight, Built to Move",
+      point1: "Effortless Folding Mechanism",
+      point2: "Smooth Ride with Shock Absorption",
+      point3: "Confidence in Every Turn",
+      text: "Electrus Pro's magnesium frame offers durability without the added weight. Enjoy enhanced mobility, easy folding, and unmatched agility, no matter where you're headed."
+    },
+    {
+      image: SKYPHERcta,
+      title: "Effortless Folding Mechanism",
+      point1: "Smooth Ride with Shock Absorption",
+      point2: "Confidence in Every Turn",
+      point3: "Tailored Seat Elevation for Ultimate Comfort",
+      text: "Fold your Electrus Pro in seconds, making it perfect for small apartments, car trunks, and office storage. When you're ready to ride again, just unfold and go."
+    },
+    {
+      image: SKYPHERcta,
+      title: "Smooth Ride with Shock Absorption",
+      point1: "Confidence in Every Turn",
+      point2: "Tailored Seat Elevation for Ultimate Comfort",
+      point3: "Lightweight, Built to Move",
+      text: "Tackle any path with confidence. The shock absorption system ensures a smooth and comfortable ride on rough city streets or off-road paths."
+    },
+    {
+      image: SKYPHERcta,
+      title: "Confidence in Every Turn",
+      point1: "Tailored Seat Elevation for Ultimate Comfort",
+      point2: "Lightweight, Built to Move",
+      point3: "Effortless Folding Mechanism",
+      text: "Sturdy handlebars and precision steering allow you to navigate sharp turns or rugged trails with ease, giving you the ultimate control on every ride."
+    },
+    {
+      image: SKYPHERcta,
+      title: "Tailored Seat Elevation for Ultimate Comfort",
+      point1: "Lightweight, Built to Move",
+      point2: "Lightweight, Built to Move",
+      point3: "Effortless Folding Mechanism",
+      text: "The adjustable seat offers a perfect ergonomic fit for riders of all sizes, enhancing both comfort and pedaling efficiency for longer rides."
+    }
+        
+    ]
 
 export default function electrus_pro() {
     return (
@@ -101,6 +138,10 @@ export default function electrus_pro() {
         <Cards_product cardsproduct={cardsproduct} />
 
         <CombinedSection slides={skyperproducts} backgroundImage={skypersliderimg} />
+
+        <div className="pb-20 relative">
+          <Product_details slide_content ={product_content} />
+        </div>
 
         <Cta  title='Discover Your Favorite Bike' link="#"/>
 

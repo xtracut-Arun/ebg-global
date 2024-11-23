@@ -8,18 +8,9 @@ import Storeaddress from '../component/StoreAddress'
 import Cta from '../component/cta';
 
 
-// slider 
-
-
-  // const backgroundImage = skypersliderimg; 
-
-
-
-
 export default function Contact() {
     return (
     <>
-        
         <section className='container mx-auto '>
             <div className="flex md:flex-row flex-col-reverse bg-[#F9F9F9] my-10 rounded-[20px]">
                 <div className="md:w-7/12 w-full py-10 md:px-10">

@@ -4,16 +4,12 @@ import Productmilestone from "../../component/Productmilestone"
 import Leftright_products from "../../component/leftright_product"
 import Cards_product from "../../component/cards_product"
 import CombinedSection from '../../component/CombinedSection';
-import Product_cta from "../../component/product_cta"
+import Product_details from "../../component/product_details_slider"
 import Cta from '../../component/cta';
 
 // images 
 import herobg from '../../images/hero-back.png'
 import slider_bg from '../../images/galexeon-slider-bg.png'
-import skyphercard1 from '../../images/skypher/SKYPHERcard-(1).png'
-import skyphercard2 from '../../images/skypher/SKYPHERcard-(2).png'
-import skyphercard3 from '../../images/skypher/SKYPHERcard-(3).png'
-import skyphercard4 from '../../images/skypher/SKYPHERcard-(4).png'
 import image from '../../images/image.png'
 import image2 from '../../images/image2.png'
 import image3 from '../../images/image3.png'
@@ -21,14 +17,7 @@ import SKYPHERcta from '../../images/skypher/SKYPHERcta.png'
 
 
 
-const product_cta_content =[
-    {   title:"Strength Meets Style",
-        image: SKYPHERcta,
-        point1:"Removable Battery for On-the-Go Charging",
-        // point2:"Smooth, Comfortable Rides",
-        // point3:"Convenient Charging On-the-Go",
-        text : "Volitoria’s steel frame doesn’t just offer robust durability; it’s also designed to make a style statement. Whether you’re commuting or taking a leisurely ride, this e-cycle is perfect for any urban setting."},]
-    
+
 const cardsproduct =[
     {img : image2 , value: '48V 250W Motor', text : "Efficient motor with enough power to handle urban commutes."},
     {img : image2 , value: 'Battery Capacity', text : "48V 10Ah removable battery—charge anywhere for convenience."},
@@ -49,6 +38,39 @@ const sliderproducts = [
     },  
   ];
 
+  const product_content =[
+    {
+      image: SKYPHERcta,
+      title: "Strength Meets Style",
+      point1: "Smooth Sailing",
+      point2: "Custom Comfort",
+      point3: "Carry Convenience",
+      text: "Volitoria’s steel frame doesn’t just offer robust durability; it’s also designed to make a style statement. Whether you’re commuting or taking a leisurely ride, this e-cycle is perfect for any urban setting."
+      },
+      {
+        image: SKYPHERcta,
+        title: "Smooth Sailing",
+        point1: "Custom Comfort",
+        point2: "Carry Convenience",
+        point3: "Strength Meets Style",
+        text: "Front fork suspension ensures a smooth ride on even the bumpiest streets, absorbing shocks and delivering a stable cycling experience."
+      },{
+        image: SKYPHERcta,
+        title: "Custom Comfort",
+        point1: "Carry Convenience",
+        point2: "Strength Meets Style",
+        point3: "Smooth Sailing",
+        text: "The adjustable seat on the Volitoria allows you to tailor your ride to your height, ensuring maximum comfort as you cruise through the city."
+      },{
+        image: SKYPHERcta,
+        title: "Carry Convenience",
+        point1: "Strength Meets Style",
+        point2: "Smooth Sailing",
+        point3: "Custom Comfort",
+        text: "The front-mounted basket offers the perfect spot to stash your belongings on the go, making every journey easy and practical."
+      }
+        
+    ]
 
 export default function voltoria() {
     return (
@@ -110,7 +132,9 @@ export default function voltoria() {
 
         <CombinedSection slides={sliderproducts} backgroundImage={slider_bg} />
 
-        <Product_cta product_cta_content={product_cta_content} />
+        <div className="pb-20 relative">
+          <Product_details slide_content ={product_content} />
+        </div>
 
         <Cta  title='Discover Your Favorite Bike' link="#"/>
 

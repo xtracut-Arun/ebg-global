@@ -5,6 +5,7 @@ import Leftright_products from "../../component/leftright_product"
 import CombinedSection from '../../component/CombinedSection';
 import Cards_product from "../../component/cards_product"
 import Product_cta from "../../component/product_cta"
+import Product_details from "../../component/product_details_slider"
 import Cta from '../../component/cta';
 
 // images 
@@ -27,7 +28,24 @@ const product_cta_content =[
         point1:"Seamless Riding Experience",
         point2:"Seamless Riding Experience",
         point3:"Convenient Charging On-the-Go",
-        text : "Crafted with a precision-engineered aluminum alloy frame, the Skypher eCycle offers unmatched durability while ensuring a lightweight and agile ride for effortless maneuverability, whether in the city or on rugged terrains."},]
+        text : "Crafted with a precision-engineered aluminum alloy frame, the Skypher eCycle offers unmatched durability while ensuring a lightweight and agile ride for effortless maneuverability, whether in the city or on rugged terrains."},
+        {
+          image: SKYPHERcta,
+          title: "Seamless Riding Experience",
+          point1: "Smooth, Comfortable Rides",
+          point2: "Convenient Charging On-the-Go",
+          point3: "Lightweight, Built to Last",
+          text: "Experience smooth, uninterrupted rides with single gear shifting that makes transitions between pedal assist and manual cycling effortless. Designed for precision and enjoyment on every ride."
+        },
+        {
+          image: SKYPHERcta,
+          title: "Convenient Charging On-the-Go",
+          point1: "Smooth, Comfortable Rides",
+          point2: "Convenient Charging On-the-Go",
+          point3: "Lightweight, Built to Last",
+          text: "With a removable, long-lasting 36V 10Ah battery, Skypher makes charging convenient wherever you are. Keep your adventures going with fast, easy recharges whether at home, work, or on the go."
+      },
+    ]
     
 const cardsproduct =[
     {img : skyphercard2 , value: '25 km/h', text : "Top speed"},
@@ -56,6 +74,10 @@ const skyperproducts = [
   
   ];
 
+
+
+
+
 export default function skypher() {
     return (
 <>
@@ -63,7 +85,8 @@ export default function skypher() {
         backgroundImage={skypherbg}
         hasOverlay={false}
         />
-        
+      
+
         <Productmilestone 
             title="The e-Cycle that redefines your ride" 
             discription="Power and precision for every journey. The Skypher is designed for those who want more from their ride."
@@ -101,7 +124,10 @@ export default function skypher() {
 
         <CombinedSection slides={skyperproducts} backgroundImage={slider_bg} />
 
-        <Product_cta product_cta_content={product_cta_content} />
+        <div className="pb-20 relative">
+          <Product_details slide_content ={product_cta_content} />
+        </div>
+        
 
         <Cta  title='Discover Your Favorite Bike' link="#"/>
 
