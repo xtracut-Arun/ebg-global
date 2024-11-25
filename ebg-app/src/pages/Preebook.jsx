@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import products from "./data";
+import Cta from '../component/cta';
 import { LuArrowRight } from "react-icons/lu";
 const formFields = [
   { name: "Name", type: "text", placeholder: "Name" },
@@ -8,7 +9,7 @@ const formFields = [
   { name: "Email", type: "email", placeholder: "Email" },
   { name: "State", type: "select", options: ["Choose State", "State 1", "State 2"] },
   { name: "City", type: "select", options: ["Choose City", "City 1", "City 2"] },
-  { name: "DealerHub", type: "select", options: ["Dealer Hub 1", "Dealer Hub 2"] },
+  { name: "DealerHub", type: "select", options: ["Dealer Hub", "Dealer Hub 2"] },
   { name: "Reference", type: "select", options: ["Where did you hear about Us?", "google", "instagram"] },
 ];
 
@@ -25,20 +26,23 @@ export default function PrebookPage() {
   }
 
   return (
-    <div className="container mx-auto mt-20 ">
+
+  <>
+    <div className="container mx-auto my-20 ">
       <div className=" bg-[#F9F9F9] flex flex-col-reverse md:flex-row rounded-xl">
         {/* Left Section: Form */}
         <div className="w-full md:w-1/3 p-10">
-          <h2 className="text-xl font-bold">{product.description}</h2>
+          <h2 className="text-xl font-bold pb-6 border-b-[1px]">Reserve Your Ride to the Future!</h2>
+          {/* <h2 className="text-xl font-bold">{product.description}</h2> */}
 
           {/* Color Selector */}
-          <div className="mt-4">
+          <div className="mt-10">
             <p >Color: {selectedColor}</p>
             <div className="flex mt-2">
               {product.colors.map((color) => (
                 <button
                   key={color}
-                  className={`w-8 h-8 mr-2 rounded-full border-2 ${
+                  className={`w-10 h-10 mr-4 rounded-full border-2 ${
                     selectedColor === color ? "border-black" : "border-gray-300"
                   }`}
                   style={{ backgroundColor: color.toLowerCase() }}
@@ -106,7 +110,7 @@ export default function PrebookPage() {
 
         {/* Right Section: Product Details */}
         <div className="md:w-2/3 px-4  bg-[#E9EBE0A6] relative rounded-t-xl md:rounded-tl-none  md:rounded-r-xl p-10">
-          <h3 className="absolute stroke text-[15vmin] md:text-[18vmin]">{product.name} </h3>
+          <h3 className="absolute stroke text-[15vmin] lg:text-[18vmin] md:text-[11vmin]">{product.name} </h3>
           <img
             src={product.images[selectedColor]}
             alt={`${product.name} - ${selectedColor}`}
@@ -115,11 +119,18 @@ export default function PrebookPage() {
           
           <div className="flex flex-col justify-center text-center">
             <p className="text-[32px]">Ex-Showroom Price:  {product.price}</p>
-            <p >Ex-showroom price: <span className="line-through">{product.cutedprice}</span> </p>
+            <div className="relative">
+            <p>Ex-showroom price: <span className="line-through">{product.cutedprice}</span> </p>
             <p className="font-bold">(Balance payable upon final purchase)</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <Cta  title='Discover Your Favorite Bike' link="#"/>
+    </>
+    
   );
 }
+

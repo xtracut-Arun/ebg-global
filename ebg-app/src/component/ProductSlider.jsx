@@ -9,25 +9,15 @@ import rightImage from '../images/about/right.png';
 
 
 
-// images
-import skypher from '../images/dealership/skyperpro.webp'
-import galexeon from '../images/dealership/galexeon.webp'
-import nexara from '../images/dealership/nexara.webp'
 
-
-const carditems = [
-    {title: 'SKYPHER PRO',image:skypher, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
-    {title: 'GALEXEON',image:galexeon, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
-    {title: 'NEXARA',image:nexara, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
-  ]
 const ProductSlider = ({ carditems }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [nextIndex, setNextIndex] = useState(1);
 
-  // const handleSlideChange = (swiper) => {
-  //   setActiveIndex(swiper.activeIndex);
-  //   setNextIndex((swiper.activeIndex + 1) % carditems.length); // Get the next slide index
-  // };
+  const handleSlideChange = (swiper) => {
+    setActiveIndex(swiper.activeIndex);
+    setNextIndex((swiper.activeIndex + 1) % carditems.length); // Get the next slide index
+  };
 
   return (
     <>
@@ -36,7 +26,7 @@ const ProductSlider = ({ carditems }) => {
       spaceBetween={50}
       slidesPerView={1}
       loop={true}
-      // onSlideChange={handleSlideChange}
+      // centeredSlides={true}
       navigation={{
         nextEl: '.custom-next',
         prevEl: '.custom-prev',

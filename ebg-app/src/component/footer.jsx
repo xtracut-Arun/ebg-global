@@ -3,11 +3,11 @@ import footlogo from "../images/ebg-global-footer-logo.svg"
 import { RiTwitterXFill,RiFacebookFill, RiInstagramLine , RiLinkedinFill,RiYoutubeLine  } from "react-icons/ri";
 
 const quicklinks =[
-    {page:'home' , link: '/'},
-    {page:'about' , link: '/about'},
-    { page: 'Prodcuts', link: '/products' },
+    {page:'Home' , link: '/'},
+    {page:'About Us' , link: '/about'},
+    { page: 'Products', link: '/products' },
     { page: 'Dealership', link: '/dealership' },
-    { page: 'Contact', link: '/contact' },
+    { page: 'Contact Us ', link: '/contact' },
 ]
 const socialicons = [
     {img:<RiFacebookFill />, link: 'https://www.facebook.com/eBikeGo'},

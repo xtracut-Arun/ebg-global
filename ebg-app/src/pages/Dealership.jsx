@@ -19,7 +19,7 @@ import dailycommuteicon1 from "../images/icons/warrantyicon.png"
 import dailycommuteicon2 from "../images/icons/warrantyicon2.png"
 import dailycommuteicon3 from "../images/icons/warrantyicon3.png"
 import { text } from '@fortawesome/fontawesome-svg-core';
-import locateimg from '../images/home/cycle.webp' 
+import locateimg from '../images/home/Experience_center.webp' 
 import dealershipformbg from '../images/dealership/dealershipform.png' 
 // prodcuts
 import escooters from '../images/dealership/e-scooters.webp'
@@ -36,9 +36,9 @@ import nexara from '../images/dealership/nexara.webp'
 
 
 const dailycommute =[ 
-  {img: dailycommuteicon1,title:"Lifetime Warranty:", text: "Peace of mind for every ride."},
-  {img: dailycommuteicon3,title:"Hassle-Free Returns: :", text: "Free shipping and easy returns."},
-  {img: dailycommuteicon2,title:"Proudly Made In India:", text: "Designed, engineered, and assembled in India."},
+  {img: dailycommuteicon1,title:"Lifetime Warranty: ", text: "On all bikes for peace of mind."},
+  {img: dailycommuteicon3,title:"Hassle-Free Returns: ", text: "Free ground shipping and easy returns."},
+  {img: dailycommuteicon2,title:"Proudly Made:", text: "Designed, engineered, and assembled in India."},
 ]
 const products=[
   {title:'e-Scooters',text:'Effortless urban mobility with style.',btntext:'Shop Bikes',btnlink:'#scooter',image:escooters},
@@ -86,8 +86,10 @@ export default function About() {
           </div>
           <div className=" w-full md:w-4/6">
          <div className="flex-col">
-         <h1 className='text-dark pb-5 text-start text-2xl'>Experience the Future of Mobility, <span className='text-grey'> Our eBikes redefine commuting, turning each journey into a delightful experience.</span></h1>
-          <p>More than just bicycles, they’re engineered for effortless freedom, blending sleek design with exhilarating performance. At eBikeGo, we bring the joy of riding back to your daily routine </p>
+         <h1 className='text-dark pb-5 text-start text-2xl'>Experience the Future of Mobility,<span className='text-grey'>Our eBikes are crafted to transform your daily commute into a 
+         joyful experience</span></h1>
+          <p>They are not just bicycles. They are a masterpiece of aerodynamic design, meant to make your journey through life exhilarating. 
+          At eBikeGo, we believe in the freedom and joy that cycling brings, making every ride more than just a commute.</p>
          </div>
          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5  text-start pt-7">
           {dailycommute.map((item, index) =>(
@@ -117,7 +119,7 @@ export default function About() {
   <div key={index}>
     <div className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-5 pt-5`}>
       <img src={item.image} alt="" className="flex w-full md:w-4/6 h-full rounded-[20px]" />
-      <div className="flex flex-col justify-between w-full md:w-2/6 rounded-[20px] bg-pink p-10">
+      <div className={`flex flex-col justify-between w-full md:w-2/6 rounded-[20px] p-10 ${index % 2===0 ? 'bg-pink': 'bg-[#E9EBE0]'}`}>
         <div>
           <h1 className='text-2xl'>{item.title}</h1>
           <p className='pb-[20px]'>{item.text}</p>
@@ -148,7 +150,7 @@ export default function About() {
             
            </div>  
           <p className='pb-10 md:w-2/3 w-full'>Become a leader in electric mobility by joining our exclusive dealership network. With comprehensive training and the strength of a globally recognized brand, grab the opportunity to shape the future of electric vehicles and be a leader.</p>
-          <a href="#" className='underline-btn  before:border-underline flex items-center w-fit gap-2'>Locate your nearest center <LuArrowRight /></a>
+          {/* <a href="#" className='underline-btn  before:border-underline flex items-center w-fit gap-2'>Locate your nearest center <LuArrowRight /></a> */}
           </div>
         </div>
     </div>          
@@ -156,7 +158,7 @@ export default function About() {
 
    
     {/* slider  */}
-    <section className='bg-[#F7F7F7] md:pb-40 pb-20'>
+    <section className='md:pb-40 pb-20'>
       <div className="container mx-auto text-center text-dark">
         <div className="flex items-center flex-col md:pt-30 pt-20 pb-10">
             <h1>Our featured collections</h1>

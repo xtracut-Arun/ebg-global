@@ -54,19 +54,21 @@ h3{font-size: 17px; font-weight: 400;}
 }
 
 .dealershipslider .swiper-slide-next{
-    background: linear-gradient(180deg, #E0E0E0 0%, rgba(249, 249, 249, 0) 100%);
-    
+    background: linear-gradient(180deg, #E0E0E0 0%, rgba(249, 249, 249, 0) 100%);   
 }
+
+.dealershipslider .swiper-slide{ background: linear-gradient(180deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 100%); border: 1px solid #F9F9F9;}
+.dealershipslider .swiper-slide-next{ background: linear-gradient(180deg, #E0E0E0 0%, rgba(249, 249, 249, 0) 100%);}
+
 @media (max-width:1024px) {
     .dealershipslider .swiper-slide-next{background: none;}
-   .dealershipslider .swiper-slide-active{ background: linear-gradient(180deg, #E0E0E0 0%, rgba(249, 249, 249, 0) 100%);}
-
+    .dealershipslider .swiper-slide-active{ background: linear-gradient(180deg, #E0E0E0 0%, rgba(249, 249, 249, 0) 100%);}
 }
+
 @media (min-width:1024px) {
   .custom-swiper .swiper-wrapper {
     display: flex;
     /* transform: translateX(70%);  */
   }
-  
 }
 

@@ -23,7 +23,7 @@ const Header = () => {
     { name: 'Products', path: '/products' },
     { name: 'Dealership', path: '/dealership' },
     { name: 'Contact Us', path: '/contact' },
-    { name: 'Preebook', path: '/preebook' },
+    { name: 'Prebook', path: '/preebook' },
   ];
 
   // Dropdown items under "Services"
@@ -89,7 +89,7 @@ const Header = () => {
               className="black-btn"
               onClick={handleLinkClick}
             >
-              Shop Bikes
+              Book a test ride
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}

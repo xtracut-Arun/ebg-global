@@ -9,7 +9,7 @@ const products = [
       name: "Skypher Pro",
       price: "₹70,000",
       cutedprice: "₹90,000",
-      colors: ["Black", "White"],
+      colors: ["White","Black"],
       description: "Reserve your ride to the future with Skypher Pro.",
       images: {
         Black: skypherBlack,
