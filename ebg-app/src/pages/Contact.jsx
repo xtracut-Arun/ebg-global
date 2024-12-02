@@ -34,7 +34,7 @@ export default function Contact() {
                         <p className='pt-3 pb-7'>Have more questions? We’d love to hear from you.</p>
                             <div className="flex md:gap-10 gap-5   md:flex-row flex-col">
                             <a href="tel:+918988845555" className='flex items-center gap-2'> <img src={call} alt="" style={{height:'16px'}}/> Contact us: +91 8988845555</a>
-                        <a href="mailto:hello@ebikego.com" className='flex items-center gap-2'> <img src={mail} alt="" style={{height:'16px'}}/> Send Mail: hello@ebikego.com</a>
+                        <a href="mailto:info@ebikego.global" className='flex items-center gap-2'> <img src={mail} alt="" style={{height:'16px'}}/> Send Mail: info@ebikego.global</a>
                     </div>
                         </div>
                 </div>

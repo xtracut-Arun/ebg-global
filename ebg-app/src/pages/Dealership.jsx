@@ -52,6 +52,7 @@ const carditems = [
   {title: 'SKYPHER PRO',image:skypher, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
   {title: 'GALEXEON',image:galexeon, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
   {title: 'NEXARA',image:nexara, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
+  {title: 'NEXARA',image:nexara, sprice:'9898', emi:'999', buttonlink:'#', learnmore:'#'},
 ]
 
 const formTexts = {
@@ -72,7 +73,7 @@ export default function About() {
     
     <section >
       <div className="container mx-auto  pt-20">
-      <h1 className='text-dark md:py-20 py-20 px-5  text-center bg-[#F9F9F9] rounded-[20px]'>Clean, Timeless Designs for a <span className='text-grey font-bold'> Thrilling Ride</span></h1>
+      <h1 className='text-dark md:py-20 py-20 px-5  text-center bg-[#E2E2E2] rounded-[20px]'>Clean, Timeless Designs for a <span className='text-grey font-bold'> Thrilling Ride</span></h1>
       </div>
     </section>
 
@@ -149,7 +150,7 @@ export default function About() {
             </div>
             
            </div>  
-          <p className='pb-10 md:w-2/3 w-full'>Become a leader in electric mobility by joining our exclusive dealership network. With comprehensive training and the strength of a globally recognized brand, grab the opportunity to shape the future of electric vehicles and be a leader.</p>
+          <p className='pb-10 md:w-2/3 w-full text-primary'>Become a leader in electric mobility by joining our exclusive dealership network. With comprehensive training and the strength of a globally recognized brand, grab the opportunity to shape the future of electric vehicles and be a leader.</p>
           {/* <a href="#" className='underline-btn  before:border-underline flex items-center w-fit gap-2'>Locate your nearest center <LuArrowRight /></a> */}
           </div>
         </div>

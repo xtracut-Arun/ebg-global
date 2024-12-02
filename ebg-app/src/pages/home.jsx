@@ -105,9 +105,9 @@ export default function Home() {
     />
     <section className='bg-[#F7F7F7] pb-40'>
       <div className="container mx-auto text-center text-dark">
-        <div className="flex items-center flex-col py-40  ">
+        <div className="flex items-center flex-col py-[8rem]  ">
             <h1 className='md:w-4/6'>Powering the World, One Ride at a Time</h1>
-            <p className='md:w-4/6'>Experience the future of mobility with eBikeGo. Our electric bikes are crafted for explorers, urban commuters, and eco-conscious riders alike, combining cutting-edge technology with sustainable design. </p>
+            <p className='md:w-[52%] text-xl'>Experience the future of mobility with eBikeGo. Our electric bikes are crafted for explorers, urban commuters, and eco-conscious riders alike, combining cutting-edge technology with sustainable design. </p>
         </div>
         <h2 className='pb-20'>Pick your Bicycle</h2>
         <Swiper
@@ -202,8 +202,8 @@ export default function Home() {
           {ownershipcard.map((item, index) =>(
             <div className="p-10 rounded-lg grey-gradient">
               <h1 className='pb-20 '>{item.sno}</h1> 
-              <h3 className='pb-5 text-2xl'>{item.title}</h3>
-              <p>{item.text}</p>
+              <h3 className='pb-5 text-2xl '>{item.title}</h3>
+              <p className='text-[#9C9C9C]'>{item.text}</p>
             </div>
           )
           )}
@@ -258,7 +258,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row  items-center justify-between text-white py-10">
           <div className='w-4/5'>
             <h2 className='mb-10 md:mb-2'>Wish to know more about eBG Global?</h2>
-            <p className='text-white'>The best way to experience our eCycles is by riding one yourself. If you have any questions about our eCycles, features, or how they can fit into your daily life, we’re here to help.</p>
+            <p className='text-white font-normal md:w-4/5'>The best way to experience our eCycles is by riding one yourself. If you have any questions about our eCycles, features, or how they can fit into your daily life, we’re here to help.</p>
           </div>
           <a href="#" className='white-btn mt-10 md:mt-0'>Get in touch</a>
         </div>
@@ -267,12 +267,15 @@ export default function Home() {
     </section>
 
 
-      <div className="container flex-col md:flex-row mx-auto py-40 flex justify-between text-dark">
-        <h2 className='w-5/6'>Your doubts?<br></br> Solved!</h2>
-        <div className="accordian w-full">
-            <FAQAccordion faqs={faqs} />  
-        </div>
+    <div className="container flex-col md:flex-row mx-auto py-40 flex justify-between text-dark">
+      <h2 className="w-5/6 sticky top-20 bg-white z-10">
+        Your doubts?<br /> Solved!
+      </h2>
+      <div className="accordian w-full">
+        <FAQAccordion faqs={faqs} />  
       </div>
+    </div>
+
     
       <Cta  title='Discover Your Favorite Bike' link="#"/>
 

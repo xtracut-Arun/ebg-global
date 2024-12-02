@@ -90,12 +90,12 @@ const ProductSlider = ({ carditems }) => {
 
       .custom-prev {
         left: 10px;
-        background-image: url(${leftImage});
+        background-image:url(${leftImage});
       }
       .swiper-button-disabled{opacity:.5;}
       .custom-next {
         right: 10px;
-        background-image: url(${rightImage});
+        background-image:url(${rightImage});
       }
         @media only screen and (max-width: 600px) {.custom-prev, .custom-next { top: 88%;}}
     `}</style>
