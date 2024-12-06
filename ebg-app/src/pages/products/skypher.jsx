@@ -48,8 +48,8 @@ const product_cta_content =[
     ]
     
 const cardsproduct =[
-    {img : skyphercard2 , value: '25 km/h', text : "Top speed"},
-    {img : skyphercard3 , value: '36V 10Ah', text : "Battery capacity*"},
+    {img : skyphercard2 , value: '25 km/h', text : "Efficient motor for seamless commuting."},
+    {img : skyphercard3 , value: '36V 10Ah', text : "36V 10Ah removable battery—charge it anywhere."},
     {img : skyphercard4 , value: 'Shimano 7', text : "Speed Gear System"},
     {img : skyphercard1 , value: '4 Hrs +', text : "Fast Charging"},
 ]
@@ -101,7 +101,7 @@ export default function skypher() {
             // col-2 
             col2_num="367v"
             col2_metric="10Ah"
-            col2_text="Max Speed"
+            col2_text="Battery capacity*"
             // col-3 
             col3_num="4"
             col3_metric=" hrs+"

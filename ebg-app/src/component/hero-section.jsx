@@ -3,7 +3,7 @@ import React from 'react';
 export default function HeroSection({ backgroundImage, title, description, buttons,backgroundPosition, hasOverlay = true }) {
   return (
     <div
-      className="h-[90vh] relative"
+      className="h-[40vh] md:h-[90vh] relative"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
