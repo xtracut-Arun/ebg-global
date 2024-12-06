@@ -21,8 +21,6 @@ export default function Productmilestone({
     col4_metric,
     col4_text
 }) {
-    // Check if col4_num and col4_text exist to display column 4
-    const showCol4 = col4_num && col4_text;
 
     return (
         <>
@@ -45,34 +43,34 @@ export default function Productmilestone({
                 <div className="flex justify-center">
                     <p className="text-center md:w-[45%]">{below_slogan}</p>
                 </div>
-                <div className={`container w-fit my-10 mx-auto grid ${showCol4 ? 'md:grid-cols-5' : 'md:grid-cols-4'} gap-10 md:gap-5 lg:gap-5 justify-center bg-[#E2E2E2] p-14 rounded-[50px]`}>
-                    <p className="text-2xl">{col_heading || 'First things first:'}</p>
+                <div className={`container w-fit my-10 mx-auto  flex flex-col md:flex-row  gap-10 md:gap-5 lg:gap-20 justify-center bg-[#E2E2E2] p-14 rounded-[50px]`}>
+                    <p className="text-2xl md:w-[28%]">{col_heading || 'First things first:'}</p>
                     <div>
-                        <p className="text-4xl text-[#484138]">
+                        <p className="text-4xl text-[#484138]  text-nowrap">
                             {col1_num} <span className="text-lg">{col1_metric}</span>
                         </p>
                         <p>{col1_text}</p>
                     </div>
                     <div>
-                        <p className="text-4xl text-[#484138]">
+                        <p className="text-4xl text-[#484138] text-nowrap">
                             {col2_num} <span className="text-lg">{col2_metric}</span>
                         </p>
                         <p>{col2_text}</p>
                     </div>
-                    <div>
-                        <p className="text-4xl text-[#484138]">
+                    <div className='w-1/5'>
+                        <p className="text-4xl text-[#484138] text-nowrap">
                             {col3_num} <span className="text-lg">{col3_metric}</span>
                         </p>
                         <p>{col3_text}</p>
                     </div>
-                    {showCol4 && (
-                        <div>
-                            <p className="text-4xl text-[#484138]">
-                                {col4_num} <span className="text-lg">{col4_metric}</span>
-                            </p>
-                            <p>{col4_text}</p>
-                        </div>
-                    )}
+                    
+                    <div>
+                        <p className="text-4xl text-[#484138] text-nowrap">
+                            {col4_num} <span className="text-lg">{col4_metric}</span>
+                        </p>
+                        <p>{col4_text}</p>
+                    </div>
+                    
                 </div>
             </div>
         </>
