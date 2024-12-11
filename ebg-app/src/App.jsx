@@ -16,6 +16,7 @@ import Voltoria from './pages/products/voltoria';
 import Contact from './pages/Contact';
 import ScrollToTop from './component/ScrollToTop'; // Importing the ScrollToTop component
 import Preebook from './pages/Preebook';
+import Dealership_application_form from './pages/dealership_application_form';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/products/voltoria" element={<Voltoria />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="products/:productSlug/prebook"  element={<Preebook />} />
+          <Route path="/dealership_application_form"  element={<Dealership_application_form />} />
         </Routes>
       </div>
       <Footer />

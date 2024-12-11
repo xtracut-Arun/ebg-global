@@ -54,58 +54,123 @@ export default function PrebookPage() {
           </div>
 
           {/* Reservation Form */}
-          <form className="pt-6" >
-            <input type="text" hidden  value={selectedColor}/>
-            <input type="text" hidden  value={product.name}/>
-              {formFields.slice(0, 3).map((field, index) => (
-                <div key={index} className="mb-3">
-                  <input
-                    type={field.type}
-                    name={field.name}
-                    placeholder={field.placeholder}
-                    className="p-2 w-full border bg-transparent py-1 pb-2 placeholder:text-[11px] placeholder:text-gray-400"
-                  />
-                </div>
-              ))}
-              
-              <div className="flex gap-3 mb-3">
-                {formFields.slice(3, 5).map((field, index) => (
-                  <div key={index} className="flex-1">
-                    <select
-                      name={field.name}
-                      className="px-1 py-[10px] w-full border bg-transparent text-[11px] text-gray-400"
-                    >
-                      {field.options.map((option, idx) => (
-                        <option key={idx} value={option}>
-                          {option}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                ))}
-              </div>
-              {formFields.slice(5, 7).map((field, index) => (
-                <div key={index} className="mb-3">
-                  <select
-                      name={field.name}
-                      className="px-1 py-[10px] w-full border bg-transparent text-[11px] text-gray-400"
-                    >
-                      {field.options.map((option, idx) => (
-                        <option key={idx} value={option}>
-                          {option}
-                        </option>
-                      ))}
-                    </select>
-                </div>
-              ))}
-                <div className="flex mt-12">
-                    <input type="checkbox" name="budget" value="75L" id="agree" />
-                    <label htmlFor="agree" className="ml-2 text-[12px]">I agree to the <a href="#!" className="text-[#ED1C24]">Terms & Conditions</a> for this booking.</label>
-                </div>
-              <button type="submit" className="mt-5 flex bg-primary items-center justify-between w-full rounded-lg text-white p-4 text-xl font-medium">
-              Reserve for ₹999<LuArrowRight  className='text-2xl'/>
-              </button>
+          <form className="pt-6" action='https://forms.zohopublic.com/ebikego/form/Ebikegoglobalprebook/formperma/pYlTcAlJUnd7N0D9pIHp2tXe73MHmcHAW4BAWxK-gP8/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+  {/* Hidden Fields */}
+  
+  <input type="hidden" name="zf_referrer_name" value="" />
+  <input type="hidden" name="zf_redirect_url" value="" />
+  <input type="hidden" name="zc_gad" value="" />
+
+
+  <input type="text" hidden value={selectedColor} name="SingleLine3" />
+  <input type="text" hidden value={product.name} name="SingleLine2" />
+  
+  {/* Name Fields */}
+  <div className="mb-3">
+    <input
+      type="text"
+      name="Name_First"
+      placeholder="First Name"
+      className="p-2 w-full border bg-transparent py-1 pb-2 placeholder:text-[11px] placeholder:text-gray-400"
+    />
+  </div>
+  <div className="mb-3">
+    <input
+      type="text"
+      name="Name_Last"
+      placeholder="Last Name"
+      className="p-2 w-full border bg-transparent py-1 pb-2 placeholder:text-[11px] placeholder:text-gray-400"
+    />
+  </div>
+
+  {/* Phone Number */}
+  <div className="mb-3">
+    <input
+      type="text"
+      name="PhoneNumber_countrycode"
+      placeholder="Phone Number"
+      className="p-2 w-full border bg-transparent py-1 pb-2 placeholder:text-[11px] placeholder:text-gray-400"
+    />
+  </div>
+
+  {/* Email */}
+  <div className="mb-3">
+    <input
+      type="text"
+      name="Email"
+      placeholder="Email"
+      className="p-2 w-full border bg-transparent py-1 pb-2 placeholder:text-[11px] placeholder:text-gray-400"
+    />
+  </div>
+
+  {/* State */}
+  <div className="mb-3">
+    <input
+      type="text"
+      name="SingleLine"
+      placeholder="State"
+      className="p-2 w-full border bg-transparent py-1 pb-2 placeholder:text-[11px] placeholder:text-gray-400"
+    />
+  </div>
+
+  {/* City */}
+  <div className="mb-3">
+    <input
+      type="text"
+      name="SingleLine1"
+      placeholder="City"
+      className="p-2 w-full border bg-transparent py-1 pb-2 placeholder:text-[11px] placeholder:text-gray-400"
+    />
+  </div>
+
+  {/* Dealer Hub Dropdown */}
+  <div className="mb-3">
+    <select
+      name="Dropdown"
+      className="px-1 py-[10px] w-full border bg-transparent text-[11px] text-gray-400"
+    >
+      <option value="-Select-">-Select-</option>
+      <option value="Dealer Hub">Dealer Hub</option>
+      <option value="Second Choice">Second Choice</option>
+      <option value="Third Choice">Third Choice</option>
+    </select>
+  </div>
+
+  {/* Where did you hear about us? Dropdown */}
+  <div className="mb-3">
+    <select
+      name="Dropdown1"
+      className="px-1 py-[10px] w-full border bg-transparent text-[11px] text-gray-400"
+    >
+      <option value="-Select-">-Select-</option>
+      <option value="Where did you hear about us?">Where did you hear about us?</option>
+      <option value="Second Choice">Second Choice</option>
+      <option value="Third Choice">Third Choice</option>
+    </select>
+  </div>
+
+  {/* Terms and Conditions Checkbox */}
+  <div className="flex mt-12">
+    <input type="checkbox" name="budget" value="75L" id="agree" />
+    <label htmlFor="agree" className="ml-2 text-[12px]">
+      I agree to the{" "}
+      <a href="#!" className="text-[#ED1C24]">
+        Terms & Conditions
+      </a>{" "}
+      for this booking.
+    </label>
+  </div>
+
+  {/* Submit Button */}
+  <button
+    type="submit"
+    className="mt-5 flex bg-primary items-center justify-between w-full rounded-lg text-white p-4 text-xl font-medium"
+  >
+    Reserve for ₹999
+    <LuArrowRight className="text-2xl" />
+  </button>
           </form>
+
         </div>
 
         {/* Right Section: Product Details */}
